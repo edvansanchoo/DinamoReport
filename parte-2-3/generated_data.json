@@ -1,0 +1,27 @@
+{
+    "Parameters": {
+        "Version": "0.1",
+        "Time horizon (h)": 24,
+        "base (MVA)": 100,
+        "Deficit Cost ($)": 1000,
+        "Spillage Cost ($)": 1
+    },
+    "Thermal Generators": {
+        "1": {
+            "No DESSEM": 1,
+            "Name": "G1"
+        }
+    },
+    "Hydro Generators": {
+        "1": {
+            "No DESSEM": 6,
+            "Name": "MACHADINHO"
+        }
+    },
+    "Transmission lines": {
+        "1": {
+            "Source bus": 1,
+            "Target bus": 2
+        }
+    }
+}
