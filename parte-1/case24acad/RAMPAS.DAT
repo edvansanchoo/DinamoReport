@@ -1,0 +1,14 @@
+RAMP 
+&us uni seg  C   T         Tempo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+&XX XXX XXX  X   X  XXXXXXXXXX XXXXX                    
+  1   1   1  S   A          50     4
+  1   1   1  S   D           0     4
+  2   1   1  S   A          50     4
+  2   1   1  S   D           0     4
+  3   1   1  S   A          50     4
+  3   1   1  S   D           0     4  
+ 50   1   1  S   A          50     4
+ 50   1   1  S   D           0     4  
+  4   1   1  S   A          50     4
+  4   1   1  S   D           0     4  
+FIM

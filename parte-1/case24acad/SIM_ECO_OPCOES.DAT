@@ -1,0 +1,35 @@
+***********************************************************************
+*                                                                     *
+*            CEPEL - CENTRO DE PESQUISAS DE ENERGIA ELETRICA          *
+*  MODELO DESSEM     - VERSAO 19.0.14.1.3 - Marco de 2021 (CPLEX) (ACADEMICA)        *
+*                                                                     *
+***********************************************************************
+
+
+   PROGRAMA LICENCIADO PARA CEMEAI                                                                                                                                                
+
+
+____________________________________________________________________
+
+  te  caso exemplo - sistema reduzido                                            - Data do Caso: 06/01/2017                                                       
+____________________________________________________________________
+
+----------------------------------
+Opcoes para a Simulacao Hidraulica                                              
+----------------------------------
+--------------------------------------
+OPCAO: Descricao da opcao                                                                                                                                                                               
+Valor: Valor adotado no caso em estudo                                                                                                                                                                  
+--------------------------------------
+
+---------------------------------------------------------------------------------;---------------------------------------------------------------------------------;
+                                      OPCAO                                      ;                                      Valor                                      ;
+                                                                                 ;                                                                                 ;
+---------------------------------------------------------------------------------;---------------------------------------------------------------------------------;
+ Flag para Simulacao hidraulica                                                  ; NAO                                                                             ;
+ Flag para Simulacao hidraulica por bacia                                        ; NAO                                                                             ;
+ Flag para juntar bacias muito pequenas em um mesmo PL                           ; NAO                                                                             ;
+ Flag para quebrar bacias                                                        ; NAO                                                                             ;
+ Numero minimo de usinas por bacia                                               ;  -                                                                              ;
+ Numero maximo de usinas por bacia                                               ;  -                                                                              ;
+ Lista de usinas de quebra                                                       ;                                                                                 ;

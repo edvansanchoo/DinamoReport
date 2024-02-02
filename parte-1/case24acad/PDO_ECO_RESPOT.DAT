@@ -1,0 +1,44 @@
+***********************************************************************
+*                                                                     *
+*            CEPEL - CENTRO DE PESQUISAS DE ENERGIA ELETRICA          *
+*  MODELO DESSEM     - VERSAO 19.0.14.1.3 - Marco de 2021 (CPLEX) (ACADEMICA)        *
+*                                                                     *
+***********************************************************************
+
+
+   PROGRAMA LICENCIADO PARA CEMEAI                                                                                                                                                
+
+
+____________________________________________________________________
+
+  te  caso exemplo - sistema reduzido                                            - Data do Caso: 06/01/2017                                                       
+____________________________________________________________________
+
+--------------------------------------------------
+Dados de manutencao de usinas e unidades geradoras                              
+--------------------------------------------------
+----------------------------------------------------------------------
+IPER:         Indice do periodo.                                                                                                                                                                        
+AREA:         Numero de Identificacao da area para reserva de potencia                                                                                                                                  
+Nome da Area: Nome da area                                                                                                                                                                              
+TP.ENTID:     Tipo de entidade:                                                                                                                                                                         
+              SIST:   Subsistema                                                                                                                                                                        
+              USIH:   Usina hidroeletrica                                                                                                                                                               
+              USIHTV: Usina hidroeletrica com tempo de viagem                                                                                                                                           
+              USIT:   Usina termoeletrica                                                                                                                                                               
+              USIE:   Usina elevatoria                                                                                                                                                                  
+              CONTR:  Contrato de Importacao/Exportacao                                                                                                                                                 
+              INTERC: Intercambio entre subsistemas                                                                                                                                                     
+ID.ENTID:     Numero da entidade                                                                                                                                                                        
+ICj:          Indice do conjunto de maquinas                                                                                                                                                            
+StatEntid:    Status da entidade na restricao de reserva:                                                                                                                                               
+              1: Participando da restricao                                                                                                                                                              
+              0: Excluida da restricao                                                                                                                                                                  
+ResArea:      Reserva de potencia da area                                                                                                                                                               
+ResIndiv:     Reserva de potencia individual para cada entidade                                                                                                                                         
+----------------------------------------------------------------------
+
+-----;-----;--------------;--------;------;---;---------;---------;---------;
+IPER ;AREA ; Nome da Area ;TP.ENTID;ID.ENT;ICj;StatEntid; ResArea ;ResIndiv ;
+  -  ;  -  ;      -       ;   -    ;  -   ; - ;    -    ;    -    ;    -    ;
+-----;-----;--------------;--------;------;---;---------;---------;---------;

@@ -1,0 +1,23 @@
+& CADASTRO DAS USINAS/UNIDADES TERMICAS
+& 
+& 
+& CARACTERISTICAS DAS USINAS TERMICAS
+& 
+&ADUSIT  us     nome     ss yyyy mm dd hr mh nunid
+&ADUSIT XXX XXXXXXXXXXXX XX XXXX XX XX XX X  XX
+CADUSIT   1 ANGRA 1       1 2017 01  6 00 0   1
+CADUSIT   2 IGARAPE       1 2017 01  6 00 0   1
+CADUSIT   3 ST.CRUZ 12    1 2017 01  6 00 0   1
+CADUSIT  50 PIRAT.12 G    1 2017 01  6 00 0   1
+CADUSIT   4 ST.CRUZ 34    2 2017 01  6 00 0   1
+& 
+& CARACTERISTICAS DAS UNIDADES TERMICAS DE CADA USINA
+& 
+&ADUNIDT  us un yyyy mm dd hr mh     Pot        PotMin    On    Of      CCold       CHot       CSTD       RUp     RDown
+&ADUNIDT XXX XX XXXX xx XX XX X  XXXXXXXXXX XXXXXXXXXX XXXXX XXXXX XXXXXXXXXX XXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+CADUNIDT   1  1 2017 01  6 00 0        657.      500.0    13     5
+CADUNIDT   2  1 2017 01  6 00 0        131.       50.0     5     5
+CADUNIDT   3  1 2017 01  6 00 0         84.       50.0     5     5
+CADUNIDT  50  1 2017 01  6 00 0        200.       50.0     5     5
+CADUNIDT   4  1 2017 01  6 00 0        220.       50.0     5     5
+FIM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

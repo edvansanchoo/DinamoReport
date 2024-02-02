@@ -1,0 +1,74 @@
+DATA
+&   Dia Mes  Ano  DURAÇÃO
+&XX XX  XX   XXXX X
+PDO  6   1   2017 1
+FIM
+&
+& BLOCO 2 - DEFINICAO DOS PATAMARES DE CARGA, TIPOS E PERIODOS DE DURACAO PARA CADA PATAMAR
+&
+TIPO
+&TipoPat  Hi  1/2   Hf  1/2
+&X XXX    XX   X    XX   X 
+&Primeiro Dia
+1 LEV    00   0    01   0
+1 LEV    01   0    02   0
+1 LEV    02   0    03   0
+1 LEV    03   0    04   0
+1 LEV    04   0    05   0
+1 LEV    05   0    06   0
+1 LEV    06   0    07   0
+1 LEV    07   0    08   0
+1 MED    08   0    09   0
+1 MED    09   0    10   0
+1 MED    10   0    11   0
+1 MED    11   0    12   0
+1 MED    12   0    13   0
+1 MED    13   0    14   0
+1 MED    14   0    15   0
+1 MED    15   0    16   0
+1 MED    16   0    17   0
+1 MED    17   0    18   0
+1 MED    18   0    19   0
+1 MED    19   0    20   0
+1 PES    20   0    21   0
+1 MED    21   0    22   0
+1 MED    22   0    23   0
+1 MED    23   0    24   0
+&Segundo dia
+2 LEV    00   0    08   0
+2 MED    08   0    20   0
+2 PES    20   0    21   0
+2 MED    21   0    24   0
+&Terceiro dia
+3 LEV    00   0    11   0
+3 MED    11   0    20   0
+3 PES    20   0    21   0
+3 MED    21   0    24   0
+&Demais dias
+4 LEV    00   0     8   0
+4 MED    08   0    15   0
+4 PES    15   0    16   0
+4 MED    16   0    24   0
+FIM                      
+&                                                                                        
+& BLOCO 3 - IDENTIFICACAO DE CADA DIA DA SEMANA COM O PERFIL DE CARGA DEFINIDO NO BLOCO 2
+&                                                                                        
+DIA
+&DiaTipo
+&XX X
+SAB 1
+DOM 2
+SEG 3
+TER 4
+QUA 4
+QUI 4
+SEX 1
+FIM  
+&
+& BLOCO 4 - ALTERACOES DO PERFIL DE CARGA PARA DIAS ESPECIAIS
+&
+DIAE
+&DiaTipo Justificativa
+&X  X    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+FIM
+&

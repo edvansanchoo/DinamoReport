@@ -1,0 +1,32 @@
+& ARQUIVO COM RESTRICOES OPERACIONAIS PARA AS UNIDADES TERMICAS 
+& (NA CONFIGURACAO DO DESSEM)
+& 
+&Consideracao de Unit Commitment termico
+UCTERM
+&UCTSER
+& 
+& CONDICOES INICIAIS DAS UNIDADES 
+& 
+INIT
+&us     nome       ug   st   GerInic     tempo st
+&XX XXXXXXXXXXXX   XX   XX   XXXXXXXXXX  XXXXX
+  1 ANGRA 1         0   0           0.0     10
+  2 IGARAPE         0   1           0.0     10
+  3 ST.CRUZ 12      0   1           0.0     10
+ 50 PIRAT.12 G      0   0           0.0     10
+  4 ST.CRUZ 34      0   1           0.0     10
+FIM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+&
+&
+& LIMITES E CONDICOES OPERACIONAIS DAS UNIDADES                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+&
+OPER                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+&us    nome      un di hi m df hf m Gmin     Gmax       Custo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+&XX XXXXXXXXXXXX XX XX XX X XX XX X XXXXXXXXXXxxxxxxxxxxXXXXXXXXXX
+  1 ANGRA 1       1  6  0 0 F                               200.00
+  1 ANGRA 1       1  6 12 0 F                               370.00
+  2 IGARAPE       1  6  0 0 F                               253.43
+  3 ST.CRUZ 12    1  6  0 0 F                               210.00
+ 50 PIRAT.12 G    1  6  0 0 F                               205.34
+  4 ST.CRUZ 34    1  6  0 0 F                               210.41
+FIM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
