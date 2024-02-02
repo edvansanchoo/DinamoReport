@@ -1,0 +1,69 @@
+***********************************************************************
+*                                                                     *
+*            CEPEL - CENTRO DE PESQUISAS DE ENERGIA ELETRICA          *
+*  MODELO DESSEM     - VERSAO 19.0.14.1.3 - Marco de 2021 (CPLEX) (ACADEMICA)        *
+*                                                                     *
+***********************************************************************
+
+
+   PROGRAMA LICENCIADO PARA CEMEAI                                                                                                                                                
+
+
+____________________________________________________________________
+
+  te  caso exemplo - sistema reduzido                                            - Data do Caso: 06/01/2017                                                       
+____________________________________________________________________
+
+-------------------------------------------------------------------
+Caracteristicas das usinas hidroeletricas e  topologia das cascatas             
+-------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+USIH:         Numero de cadastro da usina hidroeletrica                                                                                                                                                 
+NomeUsih:     Nome de cadastro da usina hidroeletrica                                                                                                                                                   
+NomeSist:     Nome do subsistema                                                                                                                                                                        
+UsihJus:      Numero de cadastro da usina hidroeletricade jusante                                                                                                                                       
+UsihDes:      Numero de cadastro da usina hidroeletricade desvio                                                                                                                                        
+UsihJusE:     Numero de cadastro da usina hidroeletricade jusante para calculo da energia arma                                                                                                          
+IperInic:     Indice do periodo inicial de operacao                                                                                                                                                     
+VmorInic:     Volume morto Inicial                                                                                                                                                                      
+VutilInic:    Volume Util Inicial                                                                                                                                                                       
+VarmMin:      Volume Armazenado Minimo                                                                                                                                                                  
+VarmMax:      Volume Armazenado Maximo                                                                                                                                                                  
+VarmSolVert:  Volume armazenado (total) referente a soleira do vertedouro                                                                                                                               
+VutilSolVert: Volume util referente a soleira do vertedouro                                                                                                                                             
+VarmSolDesv:  Volume armazenado (total) referente a soleira de desvio                                                                                                                                   
+VutilSolDesv: Volume util referente a soleira de desvio                                                                                                                                                 
+VarmRef:      Volume Armazenado de Referencia                                                                                                                                                           
+TpRegul:      Tipo de Regularizacao:                                                                                                                                                                    
+              D: Diaria                                                                                                                                                                                 
+              S: Semanal                                                                                                                                                                                
+              M: Mensal                                                                                                                                                                                 
+FlgEvap:      Flag para consideracao de evaporacao(0: nao; 1: sim)                                                                                                                                      
+NCj:          Numero de conjuntos de maquinas                                                                                                                                                           
+PdtEsp:       Produtibilidade Especifica                                                                                                                                                                
+Tperd:        Tipo de Perda Hidraulica                                                                                                                                                                  
+              %: Em % da queda bruta                                                                                                                                                                    
+              m: Em metros                                                                                                                                                                              
+PerdHid:      Valor da Perda Hidraulica                                                                                                                                                                 
+CfugMed:      Cota media do canal de fuga                                                                                                                                                               
+Vtfuga:       Flag para indicar se o vertimento influencia na cota do canal de fuga                                                                                                                     
+----------------------------------------------------------------------------------------------
+
+-----;--------------;--------;-------;-------;--------;-----;---------;---------;----------;----------;---------;---------;-----------;------------;-----------;------------;---------;-------;-------;---;---------------;-----;-------;--------;------;
+USIH ;   NomeUsih   ;NomeSist;UsihJus;UsihDes;UsihJusE;IperI;VmorInic ;VmorInic ;VutilInic ;VutilInic ; VarmMin ; VarmMax ;VarmSolVert;VutilSolVert;VarmSolDesv;VutilSolDesv; VarmRef ;TpRegul;FlgEvap;NCj;    PdtEsp     ;Tperd;PerdHid;CfugMed ;Vtfuga;
+  -  ;      -       ;   -    ;   -   ;   -   ;   -    ;  -  ;  (hm3)  ; (%Vmin) ;  (hm3)   ;   (%)    ;  (hm3)  ;  (hm3)  ;   (hm3)   ;    (%)     ;   (hm3)   ;    (%)     ;  (hm3)  ;  (%)  ;  (-)  ; - ;(MW/((m3/s).m));  -  ;(tperd);  (m)   ;  -   ;
+-----;--------------;--------;-------;-------;--------;-----;---------;---------;----------;----------;---------;---------;-----------;------------;-----------;------------;---------;-------;-------;---;---------------;-----;-------;--------;------;
+ 006 ; FURNAS       ; S1     ;  007  ;   -   ;  007   ; 001 ;    -    ;     -   ;  1738.92 ;    10.10 ;  5733.00; 22950.00;   6173.76 ;      2.56  ;   5733.00 ;      0.00  ; 22950.00;   M   ;   0   ; 2 ;    0.008633   ;  %  ;  1.09 ;  672.90;   1  ;
+ 007 ; M. DE MORAES ; S1     ;  008  ;   -   ;  008   ; 001 ;    -    ;     -   ;   250.00 ;    10.00 ;  1540.00;  4040.00;   1895.00 ;     14.20  ;   1540.00 ;      0.00  ;  4040.00;   M   ;   0   ; 4 ;    0.008340   ;  %  ;  0.80 ;  622.00;   1  ;
+ 008 ; ESTREITO     ; S1     ;  010  ;   -   ;  010   ; 001 ;    -    ;     -   ;    -     ;     -    ;  1423.00;  1423.00;   1423.00 ;            ;   1423.00 ;            ;  1423.00;   D   ;   0   ; 1 ;    0.008830   ;  %  ;  1.50 ;  557.80;   1  ;
+ 010 ; IGARAPAVA    ; S1     ;   -   ;   -   ;   -    ; 001 ;    -    ;     -   ;    -     ;     -    ;   480.00;   480.00;    480.00 ;            ;    480.00 ;            ;   480.00;   D   ;   0   ; 1 ;    0.009026   ;  m  ;  0.30 ;  494.80;   1  ;
+ 014 ; CACONDE      ; S1     ;  015  ;   -   ;  015   ; 001 ;    -    ;     -   ;   252.00 ;    50.00 ;    51.00;   555.00;    363.98 ;     62.10  ;     51.00 ;      0.00  ;   555.00;   M   ;   0   ; 2 ;    0.008437   ;  %  ;  2.04 ;  750.00;   1  ;
+ 015 ; E. DA CUNHA  ; S1     ;  016  ;   -   ;  016   ; 001 ;    -    ;     -   ;    -     ;     -    ;    14.00;    14.00;     14.00 ;            ;     14.00 ;            ;    14.00;   D   ;   0   ; 1 ;    0.008339   ;  %  ;  2.22 ;  573.50;   1  ;
+ 016 ; A.S.OLIVEIRA ; S1     ;   -   ;   -   ;   -    ; 001 ;    -    ;     -   ;    -     ;     -    ;    25.00;    25.00;     25.00 ;            ;     25.00 ;            ;    25.00;   D   ;   0   ; 1 ;    0.008240   ;  %  ;  1.36 ;  547.60;   1  ;
+ 024 ; EMBORCACAO   ; S2     ;  031  ;   -   ;  031   ; 001 ;    -    ;     -   ;  6984.96 ;    53.50 ;  4669.00; 17725.00;  10626.45 ;     45.63  ;   4669.00 ;      0.00  ; 17725.00;   M   ;   0   ; 1 ;    0.008731   ;  %  ;  1.27 ;  521.90;   0  ;
+ 025 ; NOVA PONTE   ; S2     ;  026  ;   -   ;  026   ; 001 ;    -    ;     -   ;  7618.92 ;    73.40 ;  2412.00; 12792.00;   5500.05 ;     29.75  ;   2412.00 ;      0.00  ; 12792.00;   M   ;   0   ; 1 ;    0.009223   ;  m  ;  0.93 ;  696.00;   1  ;
+ 026 ; MIRANDA      ; S2     ;  031  ;   -   ;  031   ; 001 ;    -    ;     -   ;   146.00 ;   100.00 ;   974.00;  1120.00;    975.00 ;      0.68  ;    974.00 ;      0.00  ;  1120.00;   M   ;   0   ; 1 ;    0.009117   ;  m  ;  2.40 ;  625.20;   0  ;
+ 030 ; CORUMBA I    ; S2     ;  031  ;   -   ;  031   ; 001 ;    -    ;     -   ;   647.87 ;    62.90 ;   470.00;  1500.00;    739.04 ;     26.12  ;    470.00 ;      0.00  ;  1500.00;   M   ;   0   ; 1 ;    0.008928   ;  m  ;  1.24 ;  518.90;   1  ;
+ 031 ; ITUMBIARA    ; S2     ;  032  ;   -   ;  032   ; 001 ;    -    ;     -   ;  6737.61 ;    54.10 ;  4573.00; 17027.00;   6915.60 ;     18.81  ;   4573.00 ;      0.00  ; 17027.00;   M   ;   0   ; 1 ;    0.008829   ;  %  ;  1.20 ;  435.60;   1  ;
+ 032 ; CACH.DOURADA ; S2     ;  033  ;   -   ;  033   ; 001 ;    -    ;     -   ;    -     ;     -    ;   460.00;   460.00;    460.00 ;            ;    460.00 ;            ;   460.00;   D   ;   0   ; 4 ;    0.008730   ;  %  ;  1.96 ;  401.10;   1  ;
+ 033 ; SAO SIMAO    ; S2     ;   -   ;   -   ;   -    ; 001 ;    -    ;     -   ;  4692.38 ;    84.70 ;  7000.00; 12540.00;   7000.00 ;      0.00  ;   7000.00 ;      0.00  ; 12540.00;   M   ;   0   ; 1 ;    0.009025   ;  %  ;  0.62 ;  328.10;   0  ;

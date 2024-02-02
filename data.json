@@ -1,0 +1,10 @@
+{
+    "Parameters": {
+        "Version": "0.2",
+        "Case Name": "DESSEM 24 ACAD"
+    },
+    "Thermal Generators": {},
+    "Hydro Generators": {},
+    "Buses": {},
+    "Transmission lines": {}
+}

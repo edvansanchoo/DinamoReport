@@ -10,7 +10,7 @@ Futures versions need to include:
 '''
 
 ##### PYTHON MODULES
-
+print("dfsvfdb")
 import json
 import pandas as pd
 import os
@@ -59,7 +59,8 @@ FILE_MLT = "mlt.dat"
 FILE_EER = "entdados.dat"
 FILE_BASE_NETWORK = ""
 
-FOLDER_PATH = "casos/case24acad/"
+FOLDER_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "casos", "case24acad\\")
+print(FOLDER_PATH)
 
 ##### TEMP VARIABLES USED TO STORE INFORMATION
 total_duration = 0

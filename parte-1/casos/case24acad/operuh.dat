@@ -1,0 +1,96 @@
+& ARQUIVO COM RESTRICOES OPERACIONAIS PARA OS ELEMENTOS
+& HIDRAULICOS NA CONFIGURACAO DO DESSEM.
+& 
+& 
+&-----------------------------------------------------------------------------------------
+&Ind       : Indice da restricao; 
+&T         : Tipo da Restricao: L-Limite, V-Variacao;
+&Descricao : Comentario para a restricao;
+&VL Inicial: Valor inicial para as restricoes de variacao;
+&Num       : numero da usina;
+&Nome      : Nome da usina;
+&U         : Tipo da usina: H-Hidroeletrica, E-Elevatoria;
+&CD        : Tipo da variavel da usina: 1 a 7. Maiores detalhes no manual;
+&Fator     : fator de participacao da usina nesta restricao;
+&DI        : Dia de inicio de validade para o registro;
+&HI        : Hora de inicio de validade para o registro;
+&I         : Meia-Hora de inicio de validade para o registro;
+&DF        : Dia de fim de validade para o registro;
+&HF        : Hora de fim de validade para o registro;
+&F         : Meia-hora de fim de validade para o registro;
+&Minimo    : Limite inferior da retricao;
+&Maximo    : Limite superior da retricao;
+&VarMin(%) : Variacao maxima de descida em percentual do valor maximo da variavel;
+&VarMax(%) : Variacao maxima de subida em percentual do valor maximo da variavel;
+&VarMin    : Variacao maxima de descida em valor absoluto;
+&VarMax    : Variacao maxima de subida em valor absoluto;
+&-----------------------------------------------------------------------------------------
+&PERUH REST   Ind    T     Descricao    VL Inicial
+&XXXXX XXXXXX xxxxx  x     xxxxxxxxxxxx xxxxxxxxxx
+&-----------------------------------------------------------------------------------------
+&PERUH ELEM   Ind   Num  Nome         U CD Fator
+&XXXXX XXXXXX xxxxx xxx  xxxxxxxxxxxx x xx xxxxx
+&-----------------------------------------------------------------------------------------
+&PERUH LIM    Ind   DI HI I DF HF F     Minimo    Maximo
+&XXXXX XXXXXX xxxxx xx xx x xx xx x   xxxxxxxxxxXXXXXXXXXX
+&-----------------------------------------------------------------------------------------
+&PERUH VAR    Ind   DI HI I DF HF F   VarMin(%)  VarMax(%)  VarMin    VarMax
+&XXXXX XXXXXX xxxx xxxxxxxxxxxxxxx   xxxxxxxxxxXXXXXXXXXXxxxxxxxxxxXXXXXXXXXX
+&-----------------------------------------------------------------------------------------
+OPERUH REST   10006  L     (RegistroRQ)
+OPERUH ELEM   10006   6  FURNAS       H  6   1.0
+OPERUH LIM    10006  6  0   F             102.00
+& 
+OPERUH REST   10007  L     (RegistroRQ)
+OPERUH ELEM   10007   7  M. DE MORAES H  6   1.0
+OPERUH LIM    10007  6  0   F            1100.00
+& 
+OPERUH REST   10008  L     (RegistroRQ)
+OPERUH ELEM   10008   8  ESTREITO     H  6   1.0
+OPERUH LIM    10008  6  0   F             115.00
+& 
+OPERUH REST   10010  L     (RegistroRQ)
+OPERUH ELEM   10010  10  IGARAPAVA    H  6   1.0
+OPERUH LIM    10010  6  0   F             119.00
+& 
+OPERUH REST   10014  L     (RegistroRQ)
+OPERUH ELEM   10014  14  CACONDE      H  6   1.0
+OPERUH LIM    10014  6  0   F               8.00
+& 
+OPERUH REST   10015  L     (RegistroRQ)
+OPERUH ELEM   10015  15  E. DA CUNHA  H  6   1.0
+OPERUH LIM    10015  6  0   F              12.00
+& 
+OPERUH REST   10016  L     (RegistroRQ)
+OPERUH ELEM   10016  16  A.S.OLIVEIRA H  6   1.0
+OPERUH LIM    10016  6  0   F              12.00
+& 
+OPERUH REST   10024  L     (RegistroRQ)
+OPERUH ELEM   10024  24  EMBORCACAO   H  6   1.0
+OPERUH LIM    10024  6  0   F              51.00
+& 
+OPERUH REST   10025  L     (RegistroRQ)
+OPERUH ELEM   10025  25  NOVA PONTE   H  6   1.0
+OPERUH LIM    10025  6  0   F              40.00
+& 
+OPERUH REST   10026  L     (RegistroRQ)
+OPERUH ELEM   10026  26  MIRANDA      H  6   1.0
+OPERUH LIM    10026  6  0   F              42.00
+& 
+OPERUH REST   10030  L     (RegistroRQ)
+OPERUH ELEM   10030  30  CORUMBA I    H  6   1.0
+OPERUH LIM    10030  6  0   F              74.00
+& 
+OPERUH REST   10031  L     (RegistroRQ)
+OPERUH ELEM   10031  31  ITUMBIARA    H  6   1.0
+OPERUH LIM    10031  6  0   F             233.00
+& 
+OPERUH REST   10032  L     (RegistroRQ)
+OPERUH ELEM   10032  32  CACH.DOURADA H  6   1.0
+OPERUH LIM    10032  6  0   F             254.00
+& 
+OPERUH REST   10033  L     (RegistroRQ)
+OPERUH ELEM   10033  33  SAO SIMAO    H  6   1.0
+OPERUH LIM    10033  6  0   F             450.00
+& 
+

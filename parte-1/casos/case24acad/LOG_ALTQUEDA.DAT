@@ -1,0 +1,65 @@
+***********************************************************************
+*                                                                     *
+*            CEPEL - CENTRO DE PESQUISAS DE ENERGIA ELETRICA          *
+*  MODELO DESSEM     - VERSAO 19.0.14.1.3 - Marco de 2021 (CPLEX) (ACADEMICA)        *
+*                                                                     *
+***********************************************************************
+
+
+   PROGRAMA LICENCIADO PARA CEMEAI                                                                                                                                                
+
+
+____________________________________________________________________
+
+  te  caso exemplo - sistema reduzido                                            - Data do Caso: 06/01/2017                                                       
+____________________________________________________________________
+
+
+Problemas Referentes a Altura de Queda
+
+------;------;----;-------;------;--------------;----------;----------;----------;------------;-------------------;
+ IPER ; ITER ;IDES;  Pat  ; USIH ;     Nome     ;   Hmont  ;   Hjus   ;   Hliq   ;    Qdef    ;     Problema      ;
+  -   ;   -  ;  - ;  -    ;   -  ;       -      ;   (m)    ;   (m)    ;   (m)    ;   (m3/s)   ;        -          ;
+------;------;----;-------;------;--------------;----------;----------;----------;------------;-------------------;
+   1  ;   1  ; S  ;LEVE   ;   7  ; M. DE MORAES ;   654.74 ;   622.50 ;    31.99 ;   1100.00  ;  AFOGOU           ;
+   2  ;   1  ; S  ;LEVE   ;   7  ; M. DE MORAES ;   654.72 ;   622.50 ;    31.97 ;   1100.00  ;  AFOGOU           ;
+   2  ;   1  ; S  ;LEVE   ;  25  ; NOVA PONTE   ;   808.12 ;   695.98 ;   111.21 ;    153.02  ;  AFOGOU           ;
+   3  ;   1  ; S  ;LEVE   ;   7  ; M. DE MORAES ;   654.71 ;   622.50 ;    31.95 ;   1100.00  ;  AFOGOU           ;
+   3  ;   1  ; S  ;LEVE   ;  25  ; NOVA PONTE   ;   808.13 ;   695.98 ;   111.21 ;     40.00  ;  AFOGOU           ;
+   4  ;   1  ; S  ;LEVE   ;   7  ; M. DE MORAES ;   654.69 ;   622.50 ;    31.93 ;   1100.00  ;  AFOGOU           ;
+   4  ;   1  ; S  ;LEVE   ;  25  ; NOVA PONTE   ;   808.13 ;   695.99 ;   111.22 ;     40.00  ;  AFOGOU           ;
+   5  ;   1  ; S  ;LEVE   ;   7  ; M. DE MORAES ;   654.67 ;   622.50 ;    31.91 ;   1100.00  ;  AFOGOU           ;
+   5  ;   1  ; S  ;LEVE   ;  25  ; NOVA PONTE   ;   808.14 ;   695.99 ;   111.22 ;     40.00  ;  AFOGOU           ;
+   5  ;   1  ; S  ;LEVE   ;  31  ; ITUMBIARA    ;   511.40 ;   434.12 ;    76.35 ;    719.84  ;  AFOGOU           ;
+   6  ;   1  ; S  ;LEVE   ;   7  ; M. DE MORAES ;   654.65 ;   622.50 ;    31.89 ;   1100.00  ;  AFOGOU           ;
+   7  ;   1  ; S  ;LEVE   ;   7  ; M. DE MORAES ;   654.63 ;   622.50 ;    31.87 ;   1100.00  ;  AFOGOU           ;
+   8  ;   1  ; S  ;LEVE   ;   7  ; M. DE MORAES ;   654.61 ;   622.50 ;    31.85 ;   1100.00  ;  AFOGOU           ;
+   8  ;   1  ; S  ;LEVE   ;  25  ; NOVA PONTE   ;   808.15 ;   695.98 ;   111.24 ;     40.00  ;  AFOGOU           ;
+   9  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   654.59 ;   622.50 ;    31.83 ;   1100.00  ;  AFOGOU           ;
+   9  ;   1  ; S  ;MEDIA  ;  25  ; NOVA PONTE   ;   808.15 ;   695.98 ;   111.24 ;     40.00  ;  AFOGOU           ;
+  10  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   654.57 ;   622.50 ;    31.81 ;   1100.00  ;  AFOGOU           ;
+  11  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   654.55 ;   622.50 ;    31.79 ;   1100.00  ;  AFOGOU           ;
+  11  ;   1  ; S  ;MEDIA  ;  25  ; NOVA PONTE   ;   808.16 ;   695.99 ;   111.24 ;     40.00  ;  AFOGOU           ;
+  12  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   654.53 ;   622.50 ;    31.78 ;   1139.13  ;  AFOGOU           ;
+  13  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   654.51 ;   622.50 ;    31.76 ;   1100.00  ;  AFOGOU           ;
+  14  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   654.49 ;   622.50 ;    31.74 ;   1100.00  ;  AFOGOU           ;
+  15  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   654.47 ;   622.50 ;    31.72 ;   1100.00  ;  AFOGOU           ;
+  16  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   654.45 ;   622.50 ;    31.70 ;   1100.00  ;  AFOGOU           ;
+  17  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   654.43 ;   622.50 ;    31.68 ;   1100.00  ;  AFOGOU           ;
+  18  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   654.42 ;   622.50 ;    31.66 ;   1100.00  ;  AFOGOU           ;
+  19  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   654.40 ;   622.50 ;    31.64 ;   1136.71  ;  AFOGOU           ;
+  20  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   654.38 ;   622.50 ;    31.63 ;   1136.41  ;  AFOGOU           ;
+  21  ;   1  ; S  ;PESADA ;   6  ; FURNAS       ;   752.71 ; 50177.43 ;     0.00 ; 127677.34  ; HLIQ < 0          ;
+  21  ;   1  ; S  ;PESADA ;   7  ; M. DE MORAES ;   655.79 ;   622.50 ;    33.02 ;   1136.33  ;  AFOGOU           ;
+  21  ;   1  ; S  ;PESADA ;  30  ; CORUMBA I    ;  5974.24 ;   460.50 ;  5512.50 ; *********  ;  AFOGOU           ;
+  21  ;   1  ; S  ;PESADA ;  31  ; ITUMBIARA    ;   422.43 ; ******** ;     0.00 ; *********  ; HLIQ < 0          ;
+  21  ;   1  ; S  ;PESADA ;  32  ; CACH.DOURADA ;   434.12 ; ******** ;     0.00 ; *********  ; HLIQ < 0          ;
+  22  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   657.16 ;   622.50 ;    34.38 ;   1136.41  ;  AFOGOU           ;
+  22  ;   1  ; S  ;MEDIA  ;  31  ; ITUMBIARA    ;   171.34 ;   435.55 ;     0.00 ;   1739.40  ; HLIQ < 0          ;
+  22  ;   1  ; S  ;MEDIA  ;  32  ; CACH.DOURADA ;   434.12 ;   405.60 ;    27.96 ;   1851.40  ;  AFOGOU           ;
+  23  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   657.15 ;   622.50 ;    34.38 ;   1136.35  ;  AFOGOU           ;
+  23  ;   1  ; S  ;MEDIA  ;  31  ; ITUMBIARA    ;   171.32 ;   435.15 ;     0.00 ;   1448.44  ; HLIQ < 0          ;
+  23  ;   1  ; S  ;MEDIA  ;  32  ; CACH.DOURADA ;   434.12 ;   405.60 ;    27.96 ;   1560.44  ;  AFOGOU           ;
+  24  ;   1  ; S  ;MEDIA  ;   7  ; M. DE MORAES ;   657.14 ;   622.50 ;    34.36 ;   1100.00  ;  AFOGOU           ;
+  24  ;   1  ; S  ;MEDIA  ;  31  ; ITUMBIARA    ;   171.37 ;   434.59 ;     0.00 ;   1052.91  ; HLIQ < 0          ;
+  24  ;   1  ; S  ;MEDIA  ;  32  ; CACH.DOURADA ;   434.12 ;   405.60 ;    27.96 ;   1164.91  ;  AFOGOU           ;

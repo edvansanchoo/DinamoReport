@@ -1,0 +1,89 @@
+(-----------------------------------------------------------------------)
+( Arquivos com Dados Eletricos para o DESSEM                            )
+(-----------------------------------------------------------------------)
+(                                                                        
+( Arquivos de caso base                                                  
+(### (Id C. Base)  (Nome arquivo Caso Base           )                   
+1    LEVE          LEVE.PWF
+2    MEDIA         MEDIA.PWF
+3    PESADA        PESADA.PWF
+99999                                                                    
+(                                                                        
+( Alteracoes dos casos base                                              
+(### (Id Patamar) YYYYMMDD HH MM TIME T Base (Nome arquivo patamar)      
+  01 Estagio01    20170628  0  0  0.5      1 PAT001.afp
+  02 Estagio02    20170628  0 30  0.5      1 PAT002.afp
+  03 Estagio03    20170628  1  0  0.5      1 PAT003.afp
+  04 Estagio04    20170628  1 30  0.5      1 PAT004.afp
+  05 Estagio05    20170628  2  0  0.5      1 PAT005.afp
+  06 Estagio06    20170628  2 30  0.5      1 PAT006.afp
+  07 Estagio07    20170628  3  0  0.5      1 PAT007.afp
+  08 Estagio08    20170628  3 30  0.5      1 PAT008.afp
+  09 Estagio09    20170628  4  0  0.5      1 PAT009.afp
+  10 Estagio10    20170628  4 30  0.5      1 PAT010.afp
+  11 Estagio11    20170628  5  0  0.5      1 PAT011.afp
+  12 Estagio12    20170628  5 30  0.5      1 PAT012.afp
+  13 Estagio13    20170628  6  0  0.5      1 PAT013.afp
+  14 Estagio14    20170628  6 30  0.5      1 PAT014.afp
+  15 Estagio15    20170628  7  0  0.5      2 PAT015.afp
+  16 Estagio16    20170628  7 30  0.5      2 PAT016.afp
+  17 Estagio17    20170628  8  0  0.5      2 PAT017.afp
+  18 Estagio18    20170628  8 30  0.5      2 PAT018.afp
+  19 Estagio19    20170628  9  0  0.5      2 PAT019.afp
+  20 Estagio20    20170628  9 30  0.5      2 PAT020.afp
+  21 Estagio21    20170628 10  0  0.5      2 PAT021.afp
+  22 Estagio22    20170628 10 30  0.5      2 PAT022.afp
+  23 Estagio23    20170628 11  0  0.5      2 PAT023.afp
+  24 Estagio24    20170628 11 30  0.5      2 PAT024.afp
+  25 Estagio25    20170628 12  0  0.5      2 PAT025.afp
+  26 Estagio26    20170628 12 30  0.5      2 PAT026.afp
+  27 Estagio27    20170628 13  0  0.5      2 PAT027.afp
+  28 Estagio28    20170628 13 30  0.5      2 PAT028.afp
+  29 Estagio29    20170628 14  0  0.5      2 PAT029.afp
+  30 Estagio30    20170628 14 30  0.5      2 PAT030.afp
+  31 Estagio31    20170628 15  0  0.5      2 PAT031.afp
+  32 Estagio32    20170628 15 30  0.5      2 PAT032.afp
+  33 Estagio33    20170628 16  0  0.5      2 PAT033.afp
+  34 Estagio34    20170628 16 30  0.5      2 PAT034.afp
+  35 Estagio35    20170628 17  0  0.5      2 PAT035.afp
+  36 Estagio36    20170628 17 30  0.5      2 PAT036.afp
+  37 Estagio37    20170628 18  0  0.5      3 PAT037.afp
+  38 Estagio38    20170628 18 30  0.5      3 PAT038.afp
+  39 Estagio39    20170628 19  0  0.5      3 PAT039.afp
+  40 Estagio40    20170628 19 30  0.5      3 PAT040.afp
+  41 Estagio41    20170628 20  0  0.5      3 PAT041.afp
+  42 Estagio42    20170628 20 30  0.5      3 PAT042.afp
+  43 Estagio43    20170628 21  0  0.5      2 PAT043.afp
+  44 Estagio44    20170628 21 30  0.5      2 PAT044.afp
+  45 Estagio45    20170628 22  0  0.5      2 PAT045.afp
+  46 Estagio46    20170628 22 30  0.5      2 PAT046.afp
+  47 Estagio47    20170628 23  0  0.5      2 PAT047.afp
+  48 Estagio48    20170628 23 30  0.5      2 PAT048.afp
+99999                                       
+FIM                                         
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            

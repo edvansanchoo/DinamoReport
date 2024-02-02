@@ -1,0 +1,1369 @@
+& ARQUIVO COM RESTRICOES OPERACIONAIS PARA OS ELEMENTOS
+& HIDRAULICOS NA CONFIGURACAO DO DESSEM.
+& 
+& 
+&-----------------------------------------------------------------------------------------
+&Ind       : Indice da restricao; 
+&T         : Tipo da Restricao: L-Limite, V-Variacao;
+&Descricao : Comentario para a restricao;
+&VL Inicial: Valor inicial para as restricoes de variacao;
+&Num       : numero da usina;
+&Nome      : Nome da usina;
+&U         : Tipo da usina: H-Hidroeletrica, E-Elevatoria;
+&CD        : Tipo da variavel da usina: 1 a 7. Maiores detalhes no manual;
+&Fator     : fator de participacao da usina nesta restricao;
+&DI        : Dia de inicio de validade para o registro;
+&HI        : Hora de inicio de validade para o registro;
+&I         : Meia-Hora de inicio de validade para o registro;
+&DF        : Dia de fim de validade para o registro;
+&HF        : Hora de fim de validade para o registro;
+&F         : Meia-hora de fim de validade para o registro;
+&Minimo    : Limite inferior da retricao;
+&Maximo    : Limite superior da retricao;
+&VarMin(%) : Variacao maxima de descida em percentual do valor maximo da variavel;
+&VarMax(%) : Variacao maxima de subida em percentual do valor maximo da variavel;
+&VarMin    : Variacao maxima de descida em valor absoluto;
+&VarMax    : Variacao maxima de subida em valor absoluto;
+&-----------------------------------------------------------------------------------------
+&PERUH REST   Ind    T     Descricao    VL Inicial
+&XXXXX XXXXXX xxxxx  x     xxxxxxxxxxxx xxxxxxxxxx
+&-----------------------------------------------------------------------------------------
+&PERUH ELEM   Ind   Num  Nome         U CD Fator
+&XXXXX XXXXXX xxxxx xxx  xxxxxxxxxxxx x xx xxxxx
+&-----------------------------------------------------------------------------------------
+&PERUH LIM    Ind   DI HI I DF HF F     Minimo    Maximo
+&XXXXX XXXXXX xxxxx xx xx x xx xx x   xxxxxxxxxxXXXXXXXXXX
+&-----------------------------------------------------------------------------------------
+&PERUH VAR    Ind   DI HI I DF HF F   VarMin(%)  VarMax(%)  VarMin    VarMax
+&XXXXX XXXXXX xxxx xxxxxxxxxxxxxxx   xxxxxxxxxxXXXXXXXXXXxxxxxxxxxxXXXXXXXXXX
+&-----------------------------------------------------------------------------------------
+OPERUH REST   10024  L     (RegistroRQ)
+OPERUH ELEM   10024  24  EMBORCACAO   H  6   1.0
+OPERUH LIM    10024 24  0   F              51.00
+& 
+OPERUH REST   10027  L     (RegistroRQ)
+OPERUH ELEM   10027  27  CAPIM BRANC1 H  6   1.0
+OPERUH LIM    10027 24  0   F              42.00
+& 
+OPERUH REST   10028  L     (RegistroRQ)
+OPERUH ELEM   10028  28  CAPIM BRANC2 H  6   1.0
+OPERUH LIM    10028 24  0   F              42.00
+& 
+OPERUH REST   10025  L     (RegistroRQ)
+OPERUH ELEM   10025  25  NOVA PONTE   H  6   1.0
+OPERUH LIM    10025 24  0   F              40.00
+& 
+OPERUH REST   10033  L     (RegistroRQ)
+OPERUH ELEM   10033  33  SAO SIMAO    H  6   1.0
+OPERUH LIM    10033 24  0   F             450.00
+& 
+OPERUH REST   10156  L     (RegistroRQ)
+OPERUH ELEM   10156 156  TRES MARIAS  H  6   1.0
+OPERUH LIM    10156 24  0   F              40.00
+& 
+OPERUH REST   10009  L     (RegistroRQ)
+OPERUH ELEM   10009   9  JAGUARA      H  6   1.0
+OPERUH LIM    10009 24  0   F             116.00
+& 
+OPERUH REST   10011  L     (RegistroRQ)
+OPERUH ELEM   10011  11  VOLTA GRANDE H  6   1.0
+OPERUH LIM    10011 24  0   F             126.00
+& 
+OPERUH REST   10026  L     (RegistroRQ)
+OPERUH ELEM   10026  26  MIRANDA      H  6   1.0
+OPERUH LIM    10026 24  0   F              42.00
+& 
+OPERUH REST   10010  L     (RegistroRQ)
+OPERUH ELEM   10010  10  IGARAPAVA    H  6   1.0
+OPERUH LIM    10010 24  0   F             119.00
+& 
+OPERUH REST   10148  L     (RegistroRQ)
+OPERUH ELEM   10148 148  IRAPE        H  6   1.0
+OPERUH LIM    10148 24  0   F               5.00
+& 
+OPERUH REST   10193  L     (RegistroRQ)
+OPERUH ELEM   10193 193  SA CARVALHO  H  6   1.0
+OPERUH LIM    10193 24  0   F              12.00
+& 
+OPERUH REST   10014  L     (RegistroRQ)
+OPERUH ELEM   10014  14  CACONDE      H  6   1.0
+OPERUH LIM    10014 24  0   F               8.00
+& 
+OPERUH REST   10018  L     (RegistroRQ)
+OPERUH ELEM   10018  18  A. VERMELHA  H  6   1.0
+OPERUH LIM    10018 24  0   F             364.00
+& 
+OPERUH REST   10037  L     (RegistroRQ)
+OPERUH ELEM   10037  37  BARRA BONITA H  6   1.0
+OPERUH LIM    10037 24  0   F              91.00
+& 
+OPERUH REST   10040  L     (RegistroRQ)
+OPERUH ELEM   10040  40  PROMISSAO    H  6   1.0
+OPERUH LIM    10040 24  0   F             149.00
+& 
+OPERUH REST   10042  L     (RegistroRQ)
+OPERUH ELEM   10042  42  NAVANHANDAVA H  6   1.0
+OPERUH LIM    10042 24  0   F             153.00
+& 
+OPERUH REST   10015  L     (RegistroRQ)
+OPERUH ELEM   10015  15  E. DA CUNHA  H  6   1.0
+OPERUH LIM    10015 24  0   F              12.00
+& 
+OPERUH REST   10016  L     (RegistroRQ)
+OPERUH ELEM   10016  16  A.S.OLIVEIRA H  6   1.0
+OPERUH LIM    10016 24  0   F              12.00
+& 
+OPERUH REST   10038  L     (RegistroRQ)
+OPERUH ELEM   10038  38  A.S. LIMA    H  6   1.0
+OPERUH LIM    10038 24  0   F             103.00
+& 
+OPERUH REST   10039  L     (RegistroRQ)
+OPERUH ELEM   10039  39  IBITINGA     H  6   1.0
+OPERUH LIM    10039 24  0   F             128.00
+& 
+OPERUH REST   10062  L     (RegistroRQ)
+OPERUH ELEM   10062  62  TAQUARUCU    H  6   1.0
+OPERUH LIM    10062 24  0   F             200.00
+& 
+OPERUH REST   10063  L     (RegistroRQ)
+OPERUH ELEM   10063  63  ROSANA       H  6   1.0
+OPERUH LIM    10063 24  0   F             227.00
+& 
+OPERUH REST   10052  L     (RegistroRQ)
+OPERUH ELEM   10052  52  CANOAS I     H  6   1.0
+OPERUH LIM    10052 24  0   F              98.00
+& 
+OPERUH REST   10051  L     (RegistroRQ)
+OPERUH ELEM   10051  51  CANOAS II    H  6   1.0
+OPERUH LIM    10051 24  0   F              96.00
+& 
+OPERUH REST   10047  L     (RegistroRQ)
+OPERUH ELEM   10047  47  A.A. LAYDNER H  6   1.0
+OPERUH LIM    10047 24  0   F              55.00
+& 
+OPERUH REST   10049  L     (RegistroRQ)
+OPERUH ELEM   10049  49  CHAVANTES    H  6   1.0
+OPERUH LIM    10049 24  0   F              73.00
+& 
+OPERUH REST   10061  L     (RegistroRQ)
+OPERUH ELEM   10061  61  CAPIVARA     H  6   1.0
+OPERUH LIM    10061 24  0   F             192.00
+& 
+OPERUH REST   10050  L     (RegistroRQ)
+OPERUH ELEM   10050  50  L.N. GARCEZ  H  6   1.0
+OPERUH LIM    10050 24  0   F              96.00
+& 
+OPERUH REST   10045  L     (RegistroRQ)
+OPERUH ELEM   10045  45  JUPIA        H  6   1.0
+OPERUH LIM    10045 24  0   F            1649.00
+& 
+OPERUH REST   10044  L     (RegistroRQ)
+OPERUH ELEM   10044  44  I. SOLT. EQV H  6   1.0
+OPERUH LIM    10044 24  0   F            1468.00
+& 
+OPERUH REST   10046  L     (RegistroRQ)
+OPERUH ELEM   10046  46  P. PRIMAVERA H  6   1.0
+OPERUH LIM    10046 24  0   F            1881.00
+& 
+OPERUH REST   10006  L     (RegistroRQ)
+OPERUH ELEM   10006   6  FURNAS       H  6   1.0
+OPERUH LIM    10006 24  0   F             102.00
+& 
+OPERUH REST   10007  L     (RegistroRQ)
+OPERUH ELEM   10007   7  M. DE MORAES H  6   1.0
+OPERUH LIM    10007 24  0   F             113.00
+& 
+OPERUH REST   10008  L     (RegistroRQ)
+OPERUH ELEM   10008   8  ESTREITO     H  6   1.0
+OPERUH LIM    10008 24  0   F             115.00
+& 
+OPERUH REST   10012  L     (RegistroRQ)
+OPERUH ELEM   10012  12  P. COLOMBIA  H  6   1.0
+OPERUH LIM    10012 24  0   F             143.00
+& 
+OPERUH REST   10017  L     (RegistroRQ)
+OPERUH ELEM   10017  17  MARIMBONDO   H  6   1.0
+OPERUH LIM    10017 24  0   F             245.00
+& 
+OPERUH REST   10031  L     (RegistroRQ)
+OPERUH ELEM   10031  31  ITUMBIARA    H  6   1.0
+OPERUH LIM    10031 24  0   F             233.00
+& 
+OPERUH REST   10030  L     (RegistroRQ)
+OPERUH ELEM   10030  30  CORUMBA I    H  6   1.0
+OPERUH LIM    10030 24  0   F              74.00
+& 
+OPERUH REST   10278  L     (RegistroRQ)
+OPERUH ELEM   10278 278  MANSO        H  6   1.0
+OPERUH LIM    10278 24  0   F              42.00
+& 
+OPERUH REST   10123  L     (RegistroRQ)
+OPERUH ELEM   10123 123  FUNIL        H  6   1.0
+OPERUH LIM    10123 24  0   F              50.00
+& 
+OPERUH REST   10020  L     (RegistroRQ)
+OPERUH ELEM   10020  20  BATALHA      H  6   1.0
+OPERUH LIM    10020 24  0   F               9.00
+& 
+OPERUH REST   10287  L     (RegistroRQ)
+OPERUH ELEM   10287 287  STO ANTONIO  H  6   1.0
+OPERUH LIM    10287 24  0   F            1407.00
+& 
+OPERUH REST   10257  L     (RegistroRQ)
+OPERUH ELEM   10257 257  PEIXE ANGIC  H  6   1.0
+OPERUH LIM    10257 24  0   F             185.00
+& 
+OPERUH REST   10032  L     (RegistroRQ)
+OPERUH ELEM   10032  32  CACH.DOURADA H  6   1.0
+OPERUH LIM    10032 24  0   F             254.00
+& 
+OPERUH REST   10135  L     (RegistroRQ)
+OPERUH ELEM   10135 135  P. ESTRELA   H  6   1.0
+OPERUH LIM    10135 24  0   F              19.00
+& 
+OPERUH REST   10139  L     (RegistroRQ)
+OPERUH ELEM   10139 139  CANDONGA     H  6   1.0
+OPERUH LIM    10139 24  0   F              28.00
+& 
+OPERUH REST   10262  L     (RegistroRQ)
+OPERUH ELEM   10262 262  SALTO        H  6   1.0
+OPERUH LIM    10262 24  0   F              85.00
+& 
+OPERUH REST   10089  L     (RegistroRQ)
+OPERUH ELEM   10089  89  GARIBALDI    H  6   1.0
+OPERUH LIM    10089 24  0   F              17.00
+& 
+OPERUH REST   10066  L     (RegistroRQ)
+OPERUH ELEM   10066  66  ITAIPU       H  6   1.0
+OPERUH LIM    10066 24  0   F            2839.00
+& 
+OPERUH REST   10111  L     (RegistroRQ)
+OPERUH ELEM   10111 111  PASSO REAL   H  6   1.0
+OPERUH LIM    10111 24  0   F              12.00
+& 
+OPERUH REST   10112  L     (RegistroRQ)
+OPERUH ELEM   10112 112  JACUI        H  6   1.0
+OPERUH LIM    10112 24  0   F              12.00
+& 
+OPERUH REST   10113  L     (RegistroRQ)
+OPERUH ELEM   10113 113  ITAUBA       H  6   1.0
+OPERUH LIM    10113 24  0   F              15.00
+& 
+OPERUH REST   10114  L     (RegistroRQ)
+OPERUH ELEM   10114 114  D. FRANCISCA H  6   1.0
+OPERUH LIM    10114 24  0   F              21.00
+& 
+OPERUH REST   10074  L     (RegistroRQ)
+OPERUH ELEM   10074  74  G.B. MUNHOZ  H  6   1.0
+OPERUH LIM    10074 24  0   F              80.00
+& 
+OPERUH REST   10076  L     (RegistroRQ)
+OPERUH ELEM   10076  76  SEGREDO      H  6   1.0
+OPERUH LIM    10076 24  0   F              94.00
+& 
+OPERUH REST   10082  L     (RegistroRQ)
+OPERUH ELEM   10082  82  SALTO CAXIAS H  6   1.0
+OPERUH LIM    10082 24  0   F             148.00
+& 
+OPERUH REST   10115  L     (RegistroRQ)
+OPERUH ELEM   10115 115  G.P. SOUZA   H  6   1.0
+OPERUH LIM    10115 24  0   F               7.00
+& 
+OPERUH REST   10072  L     (RegistroRQ)
+OPERUH ELEM   10072  72  FUNDAO       H  6   1.0
+OPERUH LIM    10072 24  0   F              14.00
+& 
+OPERUH REST   10057  L     (RegistroRQ)
+OPERUH ELEM   10057  57  MAUA         H  6   1.0
+OPERUH LIM    10057 24  0   F              27.00
+& 
+OPERUH REST   10077  L     (RegistroRQ)
+OPERUH ELEM   10077  77  SLT.SANTIAGO H  6   1.0
+OPERUH LIM    10077 24  0   F             116.00
+& 
+OPERUH REST   10078  L     (RegistroRQ)
+OPERUH ELEM   10078  78  SALTO OSORIO H  6   1.0
+OPERUH LIM    10078 24  0   F             119.00
+& 
+OPERUH REST   10093  L     (RegistroRQ)
+OPERUH ELEM   10093  93  PASSO FUNDO  H  6   1.0
+OPERUH LIM    10093 24  0   F               1.00
+& 
+OPERUH REST   10091  L     (RegistroRQ)
+OPERUH ELEM   10091  91  MACHADINHO   H  6   1.0
+OPERUH LIM    10091 24  0   F              44.00
+& 
+OPERUH REST   10092  L     (RegistroRQ)
+OPERUH ELEM   10092  92  ITA          H  6   1.0
+OPERUH LIM    10092 24  0   F              49.00
+& 
+OPERUH REST   10252  L     (RegistroRQ)
+OPERUH ELEM   10252 252  CANA BRAVA   H  6   1.0
+OPERUH LIM    10252 24  0   F             102.00
+& 
+OPERUH REST   10253  L     (RegistroRQ)
+OPERUH ELEM   10253 253  SAO SALVADOR H  6   1.0
+OPERUH LIM    10253 24  0   F             107.00
+& 
+OPERUH REST   10267  L     (RegistroRQ)
+OPERUH ELEM   10267 267  ESTREITO TOC H  6   1.0
+OPERUH LIM    10267 24  0   F             585.00
+& 
+OPERUH REST   10090  L     (RegistroRQ)
+OPERUH ELEM   10090  90  CAMPOS NOVOS H  6   1.0
+OPERUH LIM    10090 24  0   F              17.00
+& 
+OPERUH REST   10097  L     (RegistroRQ)
+OPERUH ELEM   10097  97  CASTRO ALVES H  6   1.0
+OPERUH LIM    10097 24  0   F               3.00
+& 
+OPERUH REST   10099  L     (RegistroRQ)
+OPERUH ELEM   10099  99  14 DE JULHO  H  6   1.0
+OPERUH LIM    10099 24  0   F               8.00
+& 
+OPERUH REST   10103  L     (RegistroRQ)
+OPERUH ELEM   10103 103  FOZ CHAPECO  H  6   1.0
+OPERUH LIM    10103 24  0   F              79.00
+& 
+OPERUH REST   10169  L     (RegistroRQ)
+OPERUH ELEM   10169 169  SOBRADINHO   H  6   1.0
+OPERUH LIM    10169 24  0   F             227.00
+& 
+OPERUH REST   10172  L     (RegistroRQ)
+OPERUH ELEM   10172 172  ITAPARICA    H  6   1.0
+OPERUH LIM    10172 24  0   F             344.00
+& 
+OPERUH REST   10178  L     (RegistroRQ)
+OPERUH ELEM   10178 178  XINGO        H  6   1.0
+OPERUH LIM    10178 24  0   F             336.00
+& 
+OPERUH REST   10190  L     (RegistroRQ)
+OPERUH ELEM   10190 190  B. ESPERANCA H  6   1.0
+OPERUH LIM    10190 24  0   F             173.00
+& 
+OPERUH REST   10189  L     (RegistroRQ)
+OPERUH ELEM   10189 189  P. CAVALO    H  6   1.0
+OPERUH LIM    10189 24  0   F               6.00
+& 
+OPERUH REST   10275  L     (RegistroRQ)
+OPERUH ELEM   10275 275  TUCURUI      H  6   1.0
+OPERUH LIM    10275 24  0   F            1269.00
+& 
+OPERUH REST   10272  L     (RegistroRQ)
+OPERUH ELEM   10272 272  CURUA-UNA    H  6   1.0
+OPERUH LIM    10272 24  0   F              45.00
+& 
+OPERUH REST   10279  L     (RegistroRQ)
+OPERUH ELEM   10279 279  SAMUEL       H  6   1.0
+OPERUH LIM    10279 24  0   F               9.00
+& 
+OPERUH REST   10280  L     (RegistroRQ)
+OPERUH ELEM   10280 280  COARACY NUNE H  6   1.0
+OPERUH LIM    10280 24  0   F              43.00
+& 
+OPERUH REST   10204  L     (RegistroRQ)
+OPERUH ELEM   10204 204  CACH.CALDEIR H  6   1.0
+OPERUH LIM    10204 24  0   F              43.00
+& 
+OPERUH REST   10126  L     (RegistroRQ)
+OPERUH ELEM   10126 126  PICADA       H  6   1.0
+OPERUH LIM    10126 24  0   F               9.00
+& 
+OPERUH REST   10283  L     (RegistroRQ)
+OPERUH ELEM   10283 283  STA CLARA MG H  6   1.0
+OPERUH LIM    10283 24  0   F               5.00
+& 
+OPERUH REST   10261  L     (RegistroRQ)
+OPERUH ELEM   10261 261  LAJEADO      H  6   1.0
+OPERUH LIM    10261 24  0   F             259.00
+& 
+OPERUH REST   10048  L     (RegistroRQ)
+OPERUH ELEM   10048  48  PIRAJU       H  6   1.0
+OPERUH LIM    10048 24  0   F              56.00
+& 
+OPERUH REST   10249  L     (RegistroRQ)
+OPERUH ELEM   10249 249  OURINHOS     H  6   1.0
+OPERUH LIM    10249 24  0   F              74.00
+& 
+OPERUH REST   10241  L     (RegistroRQ)
+OPERUH ELEM   10241 241  SLT VERDINHO H  6   1.0
+OPERUH LIM    10241 24  0   F              92.00
+& 
+OPERUH REST   10304  L     (RegistroRQ)
+OPERUH ELEM   10304 304  ITIQUIRA I   H  6   1.0
+OPERUH LIM    10304 24  0   F              17.00
+& 
+OPERUH REST   10305  L     (RegistroRQ)
+OPERUH ELEM   10305 305  ITIQUIRA II  H  6   1.0
+OPERUH LIM    10305 24  0   F              17.00
+& 
+OPERUH REST   10203  L     (RegistroRQ)
+OPERUH ELEM   10203 203  CORUMBA III  H  6   1.0
+OPERUH LIM    10203 24  0   F              27.00
+& 
+OPERUH REST   10029  L     (RegistroRQ)
+OPERUH ELEM   10029  29  CORUMBA IV   H  6   1.0
+OPERUH LIM    10029 24  0   F              22.00
+& 
+OPERUH REST   10094  L     (RegistroRQ)
+OPERUH ELEM   10094  94  MONJOLINHO   H  6   1.0
+OPERUH LIM    10094 24  0   F               2.00
+& 
+OPERUH REST   10215  L     (RegistroRQ)
+OPERUH ELEM   10215 215  SALTO PILAO  H  6   1.0
+OPERUH LIM    10215 24  0   F               9.00
+& 
+OPERUH REST   10311  L     (RegistroRQ)
+OPERUH ELEM   10311 311  CACU         H  6   1.0
+OPERUH LIM    10311 24  0   F              54.00
+& 
+OPERUH REST   10312  L     (RegistroRQ)
+OPERUH ELEM   10312 312  B. COQUEIROS H  6   1.0
+OPERUH LIM    10312 24  0   F              56.00
+& 
+OPERUH REST   10310  L     (RegistroRQ)
+OPERUH ELEM   10310 310  DARDANELOS   H  6   1.0
+OPERUH LIM    10310 24  0   F              27.00
+& 
+OPERUH REST   10315  L     (RegistroRQ)
+OPERUH ELEM   10315 315  FOZ R. CLARO H  6   1.0
+OPERUH LIM    10315 24  0   F              62.00
+& 
+OPERUH REST   10290  L     (RegistroRQ)
+OPERUH ELEM   10290 290  ESPORA       H  6   1.0
+OPERUH LIM    10290 24  0   F              22.00
+& 
+OPERUH REST   10101  L     (RegistroRQ)
+OPERUH ELEM   10101 101  SAO JOSE     H  6   1.0
+OPERUH LIM    10101 24  0   F              20.00
+& 
+OPERUH REST   10276  L     (RegistroRQ)
+OPERUH ELEM   10276 276  RONDON II    H  6   1.0
+OPERUH LIM    10276 24  0   F              33.00
+& 
+OPERUH REST   10102  L     (RegistroRQ)
+OPERUH ELEM   10102 102  PASSO S JOAO H  6   1.0
+OPERUH LIM    10102 24  0   F              21.00
+& 
+OPERUH REST   10277  L     (RegistroRQ)
+OPERUH ELEM   10277 277  BALBINA      H  6   1.0
+OPERUH LIM    10277 24  0   F              19.00
+& 
+OPERUH REST   10285  L     (RegistroRQ)
+OPERUH ELEM   10285 285  JIRAU        H  6   1.0
+OPERUH LIM    10285 24  0   F            1386.00
+& 
+OPERUH REST   10286  L     (RegistroRQ)
+OPERUH ELEM   10286 286  STO ANT JARI H  6   1.0
+OPERUH LIM    10286 24  0   F              33.00
+& 
+OPERUH REST   10284  L     (RegistroRQ)
+OPERUH ELEM   10284 284  FERREIRA GOM H  6   1.0
+OPERUH LIM    10284 24  0   F              43.00
+& 
+OPERUH REST   10229  L     (RegistroRQ)
+OPERUH ELEM   10229 229  TELES PIRES  H  6   1.0
+OPERUH LIM    10229 24  0   F             313.00
+& 
+OPERUH REST   10192  L     (RegistroRQ)
+OPERUH ELEM   10192 192  GUILMAN-AMOR H  6   1.0
+OPERUH LIM    10192 24  0   F              11.00
+& 
+OPERUH REST   10314  L     (RegistroRQ)
+OPERUH ELEM   10314 314  PIMENTAL     H  6   1.0
+OPERUH LIM    10314 24  0   F             380.00
+& 
+OPERUH REST   20002  L     (RegistroMP)
+OPERUH ELEM   20002   2  ITUTINGA     H  7   1.0
+OPERUH LIM    20002 24  0   F                      39.52
+& 
+OPERUH REST   20004  L     (RegistroMP)
+OPERUH ELEM   20004   4  FUNIL-GRANDE H  7   1.0
+OPERUH LIM    20004 24  0   F                     137.16
+& 
+OPERUH REST   20033  L     (RegistroMP)
+OPERUH ELEM   20033  33  SAO SIMAO    H  7   1.0
+OPERUH LIM    20033 24  0   F                    1668.96
+& 
+OPERUH REST   20011  L     (RegistroMP)
+OPERUH ELEM   20011  11  VOLTA GRANDE H  7   1.0
+OPERUH LIM    20011 24  0   F                     285.00
+& 
+OPERUH REST   20143  L     (RegistroMP)
+OPERUH ELEM   20143 143  AIMORES      H  7   1.0
+OPERUH LIM    20143 24  0   F                     251.46
+& 
+OPERUH REST   20148  L     (RegistroMP)
+OPERUH ELEM   20148 148  IRAPE        H  7   1.0
+OPERUH LIM    20148 24  0   F                     266.13
+& 
+OPERUH REST   20217  L     (RegistroMP)
+OPERUH ELEM   20217 217  ROSAL        H  7   1.0
+OPERUH LIM    20217 24  0   F                      27.50
+& 
+OPERUH REST   20018  L     (RegistroMP)
+OPERUH ELEM   20018  18  A. VERMELHA  H  7   1.0
+OPERUH LIM    20018 24  0   F                    1163.03
+& 
+OPERUH REST   20037  L     (RegistroMP)
+OPERUH ELEM   20037  37  BARRA BONITA H  7   1.0
+OPERUH LIM    20037 24  0   F                      64.96
+& 
+OPERUH REST   20063  L     (RegistroMP)
+OPERUH ELEM   20063  63  ROSANA       H  7   1.0
+OPERUH LIM    20063 24  0   F                     278.24
+& 
+OPERUH REST   20049  L     (RegistroMP)
+OPERUH ELEM   20049  49  CHAVANTES    H  7   1.0
+OPERUH LIM    20049 24  0   F                     384.61
+& 
+OPERUH REST   20061  L     (RegistroMP)
+OPERUH ELEM   20061  61  CAPIVARA     H  7   1.0
+OPERUH LIM    20061 24  0   F                     466.73
+& 
+OPERUH REST   20045  L     (RegistroMP)
+OPERUH ELEM   20045  45  JUPIA        H  7   1.0
+OPERUH LIM    20045 24  0   F                    1107.56
+& 
+OPERUH REST   20044  L     (RegistroMP)
+OPERUH ELEM   20044  44  I. SOLT. EQV H  7   1.0
+OPERUH LIM    20044 24  0   F                    4081.44
+& 
+OPERUH REST   20007  L     (RegistroMP)
+OPERUH ELEM   20007   7  M. DE MORAES H  7   1.0
+OPERUH LIM    20007 24  0   F                     441.67
+& 
+OPERUH REST   20017  L     (RegistroMP)
+OPERUH ELEM   20017  17  MARIMBONDO   H  7   1.0
+OPERUH LIM    20017 24  0   F                    1302.00
+& 
+OPERUH REST   20031  L     (RegistroMP)
+OPERUH ELEM   20031  31  ITUMBIARA    H  7   1.0
+OPERUH LIM    20031 24  0   F                    1784.27
+& 
+OPERUH REST   20020  L     (RegistroMP)
+OPERUH ELEM   20020  20  BATALHA      H  7   1.0
+OPERUH LIM    20020 24  0   F                      26.25
+& 
+OPERUH REST   20287  L     (RegistroMP)
+OPERUH ELEM   20287 287  STO ANTONIO  H  7   1.0
+OPERUH LIM    20287 24  0   F                    3132.97
+& 
+OPERUH REST   20130  L     (RegistroMP)
+OPERUH ELEM   20130 130  ILHA POMBOS  H  7   1.0
+OPERUH LIM    20130 24  0   F                     135.70
+& 
+OPERUH REST   20119  L     (RegistroMP)
+OPERUH ELEM   20119 119  HENRY BORDEN H  7   1.0
+OPERUH LIM    20119 24  0   F                     821.44
+& 
+OPERUH REST   20032  L     (RegistroMP)
+OPERUH ELEM   20032  32  CACH.DOURADA H  7   1.0
+OPERUH LIM    20032 24  0   F                     598.12
+& 
+OPERUH REST   20139  L     (RegistroMP)
+OPERUH ELEM   20139 139  CANDONGA     H  7   1.0
+OPERUH LIM    20139 24  0   F                       0.00
+& 
+OPERUH REST   20066  L     (RegistroMP)
+OPERUH ELEM   20066  66  ITAIPU       H  7   1.0
+OPERUH LIM    20066 24  0   F                   12600.00
+& 
+OPERUH REST   20112  L     (RegistroMP)
+OPERUH ELEM   20112 112  JACUI        H  7   1.0
+OPERUH LIM    20112 24  0   F                     154.26
+& 
+OPERUH REST   20078  L     (RegistroMP)
+OPERUH ELEM   20078  78  SALTO OSORIO H  7   1.0
+OPERUH LIM    20078 24  0   F                     952.95
+& 
+OPERUH REST   20093  L     (RegistroMP)
+OPERUH ELEM   20093  93  PASSO FUNDO  H  7   1.0
+OPERUH LIM    20093 24  0   F                       0.00
+& 
+OPERUH REST   20252  L     (RegistroMP)
+OPERUH ELEM   20252 252  CANA BRAVA   H  7   1.0
+OPERUH LIM    20252 24  0   F                     364.50
+& 
+OPERUH REST   20103  L     (RegistroMP)
+OPERUH ELEM   20103 103  FOZ CHAPECO  H  7   1.0
+OPERUH LIM    20103 24  0   F                     701.95
+& 
+OPERUH REST   20172  L     (RegistroMP)
+OPERUH ELEM   20172 172  ITAPARICA    H  7   1.0
+OPERUH LIM    20172 24  0   F                    1444.09
+& 
+OPERUH REST   20275  L     (RegistroMP)
+OPERUH ELEM   20275 275  TUCURUI      H  7   1.0
+OPERUH LIM    20275 24  0   F                    6828.00
+& 
+OPERUH REST   20126  L     (RegistroMP)
+OPERUH ELEM   20126 126  PICADA       H  7   1.0
+OPERUH LIM    20126 24  0   F                      35.70
+& 
+OPERUH REST   20249  L     (RegistroMP)
+OPERUH ELEM   20249 249  OURINHOS     H  7   1.0
+OPERUH LIM    20249 24  0   F                      29.41
+& 
+OPERUH REST   20304  L     (RegistroMP)
+OPERUH ELEM   20304 304  ITIQUIRA I   H  7   1.0
+OPERUH LIM    20304 24  0   F                      39.09
+& 
+OPERUH REST   20203  L     (RegistroMP)
+OPERUH ELEM   20203 203  CORUMBA III  H  7   1.0
+OPERUH LIM    20203 24  0   F                      62.30
+& 
+OPERUH REST   20101  L     (RegistroMP)
+OPERUH ELEM   20101 101  SAO JOSE     H  7   1.0
+OPERUH LIM    20101 24  0   F                      25.50
+& 
+OPERUH REST   20276  L     (RegistroMP)
+OPERUH ELEM   20276 276  RONDON II    H  7   1.0
+OPERUH LIM    20276 24  0   F                      49.02
+& 
+OPERUH REST   20102  L     (RegistroMP)
+OPERUH ELEM   20102 102  PASSO S JOAO H  7   1.0
+OPERUH LIM    20102 24  0   F                      38.50
+& 
+OPERUH REST   20277  L     (RegistroMP)
+OPERUH ELEM   20277 277  BALBINA      H  7   1.0
+OPERUH LIM    20277 24  0   F                     199.80
+& 
+OPERUH REST   20285  L     (RegistroMP)
+OPERUH ELEM   20285 285  JIRAU        H  7   1.0
+OPERUH LIM    20285 24  0   F                    3416.25
+& 
+OPERUH REST   20286  L     (RegistroMP)
+OPERUH ELEM   20286 286  STO ANT JARI H  7   1.0
+OPERUH LIM    20286 24  0   F                     246.79
+& 
+OPERUH REST   20229  L     (RegistroMP)
+OPERUH ELEM   20229 229  TELES PIRES  H  7   1.0
+OPERUH LIM    20229 24  0   F                    1456.00
+& 
+OPERUH REST   30003  L     (RestRHV  3)
+OPERUH ELEM   30003  25  NOVA PONTE   H  2   1.0
+OPERUH LIM    30003 30 23 1  1  0 0        6.002          
+& 
+OPERUH REST   30004  L     (RestRHV  4)
+OPERUH ELEM   30004  24  EMBORCACAO   H  2   1.0
+OPERUH LIM    30004 30 23 1  1  0 0        6.000          
+& 
+OPERUH REST   30006  L     (RestRHV  6)
+OPERUH ELEM   30006  33  SAO SIMAO    H  2   1.0
+OPERUH LIM    30006 30 23 1  1  0 0       10.000          
+& 
+OPERUH REST   30013  L     (RestRHV 13)
+OPERUH ELEM   30013  18  A. VERMELHA  H  2   1.0
+OPERUH LIM    30013 30 23 1  1  0 0       10.000          
+& 
+OPERUH REST   30015  L     (RestRHV 15)
+OPERUH ELEM   30015  37  BARRA BONITA H  2   1.0
+OPERUH LIM    30015 30 23 1  1  0 0       48.287          
+& 
+OPERUH REST   30017  L     (RestRHV 17)
+OPERUH ELEM   30017  40  PROMISSAO    H  2   1.0
+OPERUH LIM    30017 30 23 1  1  0 0       28.950          
+& 
+OPERUH REST   30020  L     (RestRHV 20)
+OPERUH ELEM   30020  44  I. SOLT. EQV H  2   1.0
+OPERUH LIM    30020 30 23 1  1  0 0       45.721          
+& 
+OPERUH REST   30023  L     (RestRHV 23)
+OPERUH ELEM   30023 120  JAGUARI      H  2   1.0
+OPERUH LIM    30023 30 23 1  1  0 0                 73.644
+& 
+OPERUH REST   30025  L     (RestRHV 25)
+OPERUH ELEM   30025  47  A.A. LAYDNER H  2   1.0
+OPERUH LIM    30025 30 23 1  1  0 0       15.008          
+& 
+OPERUH REST   30026  L     (RestRHV 26)
+OPERUH ELEM   30026  49  CHAVANTES    H  2   1.0
+OPERUH LIM    30026 30 23 1  1  0 0       15.028          
+& 
+OPERUH REST   30027  L     (RestRHV 27)
+OPERUH ELEM   30027  61  CAPIVARA     H  2   1.0
+OPERUH LIM    30027 30 23 1  1  0 0        6.000          
+& 
+OPERUH REST   30028  L     (RestRHV 28)
+OPERUH ELEM   30028  61  CAPIVARA     H  2   1.0
+OPERUH LIM    30028 30 23 1  1  0 0                 90.000
+& 
+OPERUH REST   30041  L     (RestRHV 41)
+OPERUH ELEM   30041   6  FURNAS       H  2   1.0
+OPERUH LIM    30041 30 23 1  1  0 0        9.000          
+& 
+OPERUH REST   30042  L     (RestRHV 42)
+OPERUH ELEM   30042   7  M. DE MORAES H  2   1.0
+OPERUH LIM    30042 30 23 1  1  0 0       13.503          
+& 
+OPERUH REST   30050  L     (RestRHV 50)
+OPERUH ELEM   30050  17  MARIMBONDO   H  2   1.0
+OPERUH LIM    30050 30 23 1  1  0 0       10.000          
+& 
+OPERUH REST   30054  L     (RestRHV 54)
+OPERUH ELEM   30054  17  MARIMBONDO   H  2   1.0
+OPERUH LIM    30054 30 23 1  1  0 0        0.000    95.044
+& 
+OPERUH REST   30055  L     (RestRHV 55)
+OPERUH ELEM   30055  31  ITUMBIARA    H  2   1.0
+OPERUH LIM    30055 30 23 1  1  0 0        7.997          
+& 
+OPERUH REST   30065  L     (RestRHV 65)
+OPERUH ELEM   30065 121  PARAIBUNA    H  2   1.0
+OPERUH LIM    30065 30 23 1  1  0 0       40.027          
+& 
+OPERUH REST   30066  L     (RestRHV 66)
+OPERUH ELEM   30066 120  JAGUARI      H  2   1.0
+OPERUH LIM    30066 30 23 1  1  0 0       49.966          
+& 
+OPERUH REST   30067  L     (RestRHV 67)
+OPERUH ELEM   30067 122  SANTA BRANCA H  2   1.0
+OPERUH LIM    30067 30 23 1  1  0 0       10.000          
+& 
+OPERUH REST   30071  L     (RestRHV 71)
+OPERUH ELEM   30071 123  FUNIL        H  2   1.0
+OPERUH LIM    30071 30 23 1  1  0 0       30.058          
+& 
+OPERUH REST   30073  L     (RestRHV 73)
+OPERUH ELEM   30073 124  LAJES        H  2   1.0
+OPERUH LIM    30073 30 23 1  1  0 0       18.298          
+& 
+OPERUH REST   30074  L     (RestRHV 74)
+OPERUH ELEM   30074 122  SANTA BRANCA H  2   1.0
+OPERUH LIM    30074 30 23 1  1  0 0                 46.789
+& 
+OPERUH REST   30075  L     (RestRHV 75)
+OPERUH ELEM   30075 117  GUARAPIRANGA H  2   1.0
+OPERUH LIM    30075 30 23 1  1  0 0        0.000    97.081
+& 
+OPERUH REST   30092  L     (RestRHV 92)
+OPERUH ELEM   30092  73  JORDAO       H  2   1.0
+OPERUH LIM    30092 30 23 1  1  0 0      100.000          
+& 
+OPERUH REST   30101  L     (RestRHV101)
+OPERUH ELEM   30101 275  TUCURUI      H  2   1.0
+OPERUH LIM    30101 30 23 1  1  0 0        9.999   100.000
+& 
+OPERUH REST   30102  L     (RestRHV102)
+OPERUH ELEM   30102 155  RETIRO BAIXO H  2   1.0
+OPERUH LIM    30102 30 23 1  1  0 0        2.814     2.814
+& 
+OPERUH REST   30105  L     (RestRHV105)
+OPERUH ELEM   30105 257  PEIXE ANGIC  H  2   1.0
+OPERUH LIM    30105 30 23 1  1  0 0       55.499    55.499
+& 
+OPERUH REST   50010  L     (RestRHQ 10)
+OPERUH ELEM   50010 277  BALBINA      H  6   1.0
+OPERUH LIM    50010 24  0 0 F              390          
+& 
+OPERUH REST   50011  L     (RestRHQ 11)
+OPERUH ELEM   50011  27  CAPIM BRANC1 H  6   1.0
+OPERUH LIM    50011 24  0 0 F               72          
+& 
+OPERUH REST   50012  L     (RestRHQ 12)
+OPERUH ELEM   50012   1  CAMARGOS     H  6   1.0
+OPERUH LIM    50012 24  0 0 F               24      1000
+& 
+OPERUH REST   50013  L     (RestRHQ 13)
+OPERUH ELEM   50013   2  ITUTINGA     H  6   1.0
+OPERUH LIM    50013 24  0 0 F               24      1170
+& 
+OPERUH REST   50015  L     (RestRHQ 15)
+OPERUH ELEM   50015   4  FUNIL-GRANDE H  6   1.0
+OPERUH LIM    50015 24  0 0 F               60      1250
+& 
+OPERUH REST   50028  L     (RestRHQ 28)
+OPERUH ELEM   50028   9  JAGUARA      H  6   1.0
+OPERUH LIM    50028 24  0 0 F              168      4300
+& 
+OPERUH REST   50030  L     (RestRHQ 30)
+OPERUH ELEM   50030  10  IGARAPAVA    H  6   1.0
+OPERUH LIM    50030 24  0 0 F              172      4500
+& 
+OPERUH REST   50032  L     (RestRHQ 32)
+OPERUH ELEM   50032  11  VOLTA GRANDE H  6   1.0
+OPERUH LIM    50032 24  0 0 F              178      5000
+& 
+OPERUH REST   50034  L     (RestRHQ 34)
+OPERUH ELEM   50034  24  EMBORCACAO   H  6   1.0
+OPERUH LIM    50034 24  0 0 F              100      5000
+& 
+OPERUH REST   50035  L     (RestRHQ 35)
+OPERUH ELEM   50035  25  NOVA PONTE   H  6   1.0
+OPERUH LIM    50035 24  0 0 F               80      2000
+& 
+OPERUH REST   50036  L     (RestRHQ 36)
+OPERUH ELEM   50036  26  MIRANDA      H  6   1.0
+OPERUH LIM    50036 24  0 0 F               64      3000
+& 
+OPERUH REST   50037  L     (RestRHQ 37)
+OPERUH ELEM   50037  33  SAO SIMAO    H  6   1.0
+OPERUH LIM    50037 24  0 0 F              450     16000
+& 
+OPERUH REST   50041  L     (RestRHQ 41)
+OPERUH ELEM   50041 156  TRES MARIAS  H  6   1.0
+OPERUH LIM    50041 24  0 0 F            300.0     300.0
+& 
+OPERUH REST   50045  L     (RestRHQ 45)
+OPERUH ELEM   50045 162  QUEIMADO     H  6   1.0
+OPERUH LIM    50045 24  0 0 F             17.0       204
+& 
+OPERUH REST   50049  L     (RestRHQ 49)
+OPERUH ELEM   50049 143  AIMORES      H  6   1.0
+OPERUH LIM    50049 24  0 0 F                       7000
+& 
+OPERUH REST   50050  L     (RestRHQ 50)
+OPERUH ELEM   50050 148  IRAPE        H  6   1.0
+OPERUH LIM    50050 24  0 0 F             23.4      2100
+& 
+OPERUH REST   50056  L     (RestRHQ 56)
+OPERUH ELEM   50056  14  CACONDE      H  6   1.0
+OPERUH LIM    50056 24  0 0 F               32       250
+& 
+OPERUH REST   50057  L     (RestRHQ 57)
+OPERUH ELEM   50057  14  CACONDE      H  6   1.0
+OPERUH LIM    50057 24  0 0 F               32       600
+& 
+OPERUH REST   50058  L     (RestRHQ 58)
+OPERUH ELEM   50058  16  A.S.OLIVEIRA H  6   1.0
+OPERUH LIM    50058 24  0 0 F               19       550
+& 
+OPERUH REST   50060  L     (RestRHQ 60)
+OPERUH ELEM   50060  37  BARRA BONITA H  6   1.0
+OPERUH LIM    50060 24  0 0 F                0      2300
+& 
+OPERUH REST   50062  L     (RestRHQ 62)
+OPERUH ELEM   50062  40  PROMISSAO    H  6   1.0
+OPERUH LIM    50062 24  0 0 F              160          
+& 
+OPERUH REST   50063  L     (RestRHQ 63)
+OPERUH ELEM   50063 249  OURINHOS     H  6   1.0
+OPERUH LIM    50063 24  0 0 F               73      2000
+& 
+OPERUH REST   50064  L     (RestRHQ 64)
+OPERUH ELEM   50064  48  PIRAJU       H  6   1.0
+OPERUH LIM    50064 24  0 0 F              147      1200
+& 
+OPERUH REST   50065  L     (RestRHQ 65)
+OPERUH ELEM   50065  47  A.A. LAYDNER H  6   1.0
+OPERUH LIM    50065 24  0 0 F              147          
+& 
+OPERUH REST   50067  L     (RestRHQ 67)
+OPERUH ELEM   50067  47  A.A. LAYDNER H  6   1.0
+OPERUH LIM    50067 24  0 0 F               55          
+& 
+OPERUH REST   50068  L     (RestRHQ 68)
+OPERUH ELEM   50068  49  CHAVANTES    H  6   1.0
+OPERUH LIM    50068 24  0 0 F               73          
+& 
+OPERUH REST   50070  L     (RestRHQ 70)
+OPERUH ELEM   50070  50  L.N. GARCEZ  H  6   1.0
+OPERUH LIM    50070 24  0 0 F               96          
+& 
+OPERUH REST   50072  L     (RestRHQ 72)
+OPERUH ELEM   50072  51  CANOAS II    H  6   1.0
+OPERUH LIM    50072 24  0 0 F               96          
+& 
+OPERUH REST   50074  L     (RestRHQ 74)
+OPERUH ELEM   50074  52  CANOAS I     H  6   1.0
+OPERUH LIM    50074 24  0 0 F               98          
+& 
+OPERUH REST   50076  L     (RestRHQ 76)
+OPERUH ELEM   50076  61  CAPIVARA     H  6   1.0
+OPERUH LIM    50076 24  0 0 F              192          
+& 
+OPERUH REST   50078  L     (RestRHQ 78)
+OPERUH ELEM   50078  62  TAQUARUCU    H  6   1.0
+OPERUH LIM    50078 24  0 0 F              200          
+& 
+OPERUH REST   50080  L     (RestRHQ 80)
+OPERUH ELEM   50080  63  ROSANA       H  6   1.0
+OPERUH LIM    50080 24  0 0 F              227          
+& 
+OPERUH REST   50081  L     (RestRHQ 81)
+OPERUH ELEM   50081  62  TAQUARUCU    H  6   1.0
+OPERUH LIM    50081 24  0 0 F                      12000
+& 
+OPERUH REST   50082  L     (RestRHQ 82)
+OPERUH ELEM   50082 311  CACU         H  6   1.0
+OPERUH LIM    50082 24  0 0 F               30          
+& 
+OPERUH REST   50083  L     (RestRHQ 83)
+OPERUH ELEM   50083 312  B. COQUEIROS H  6   1.0
+OPERUH LIM    50083 24  0 0 F               30          
+& 
+OPERUH REST   50084  L     (RestRHQ 84)
+OPERUH ELEM   50084  46  P. PRIMAVERA H  6   1.0
+OPERUH LIM    50084 24  0 0 F             4600     51920
+& 
+OPERUH REST   50085  L     (RestRHQ 85)
+OPERUH ELEM   50085  46  P. PRIMAVERA H  6   1.0
+OPERUH LIM    50085 24  0 0 F             4600          
+& 
+OPERUH REST   50087  L     (RestRHQ 87)
+OPERUH ELEM   50087 120  JAGUARI      H  6   1.0
+OPERUH LIM    50087 24  0 0 F                4          
+& 
+OPERUH REST   50088  L     (RestRHQ 88)
+OPERUH ELEM   50088 121  PARAIBUNA    H  6   1.0
+OPERUH LIM    50088 24  0 0 F               10          
+& 
+OPERUH REST   50091  L     (RestRHQ 91)
+OPERUH ELEM   50091  45  JUPIA        H  6   1.0
+OPERUH LIM    50091 24  0 0 F             4000     16000
+& 
+OPERUH REST   50092  L     (RestRHQ 92)
+OPERUH ELEM   50092  45  JUPIA        H  6   1.0
+OPERUH LIM    50092 24  0 0 F             4000     56570
+& 
+OPERUH REST   50093  L     (RestRHQ 93)
+OPERUH ELEM   50093   6  FURNAS       H  6   1.0
+OPERUH LIM    50093 24  0 0 F                0      4000
+& 
+OPERUH REST   50094  L     (RestRHQ 94)
+OPERUH ELEM   50094   7  M. DE MORAES H  6   1.0
+OPERUH LIM    50094 24  0 0 F                0      4400
+& 
+OPERUH REST   50096  L     (RestRHQ 96)
+OPERUH ELEM   50096   8  ESTREITO     H  6   1.0
+OPERUH LIM    50096 24  0 0 F                0      4500
+& 
+OPERUH REST   50098  L     (RestRHQ 98)
+OPERUH ELEM   50098  12  P. COLOMBIA  H  6   1.0
+OPERUH LIM    50098 24  0 0 F                0      7000
+& 
+OPERUH REST   50099  L     (RestRHQ 99)
+OPERUH ELEM   50099  17  MARIMBONDO   H  6   1.0
+OPERUH LIM    50099 24  0 0 F                0      8000
+& 
+OPERUH REST   50100  L     (RestRHQ100)
+OPERUH ELEM   50100  31  ITUMBIARA    H  6   1.0
+OPERUH LIM    50100 24  0 0 F                0      7000
+& 
+OPERUH REST   50102  L     (RestRHQ102)
+OPERUH ELEM   50102 123  FUNIL        H  6   1.0
+OPERUH LIM    50102 24  0 0 F               70       700
+& 
+OPERUH REST   50105  L     (RestRHQ105)
+OPERUH ELEM   50105 251  SERRA MESA   H  6   1.0
+OPERUH LIM    50105 24  0 0 F              300          
+& 
+OPERUH REST   50110  L     (RestRHQ110)
+OPERUH ELEM   50110 278  MANSO        H  6   1.0
+OPERUH LIM    50110 24  0 0 F             95.0     214.5
+& 
+OPERUH REST   50113  L     (RestRHQ113)
+OPERUH ELEM   50113  30  CORUMBA I    H  6   1.0
+OPERUH LIM    50113 24  0 0 F              120          
+& 
+OPERUH REST   50114  L     (RestRHQ114)
+OPERUH ELEM   50114  20  BATALHA      H  6   1.0
+OPERUH LIM    50114 24  0 0 F             23.0          
+& 
+OPERUH REST   50118  L     (RestRHQ118)
+OPERUH ELEM   50118 257  PEIXE ANGIC  H  6   1.0
+OPERUH LIM    50118 24  0 0 F              360          
+& 
+OPERUH REST   50125  L     (RestRHQ125)
+OPERUH ELEM   50125 125  STA CECILIA  H  6   1.0
+OPERUH LIM    50125 24  0 0 F               71        71
+& 
+OPERUH REST   50126  L     (RestRHQ126)
+OPERUH ELEM   50126 181  SANTANA      H  6   1.0
+OPERUH LIM    50126 24  0 0 F                         10
+& 
+OPERUH REST   50149  L     (RestRHQ149)
+OPERUH ELEM   50149 122  SANTA BRANCA H  6   1.0
+OPERUH LIM    50149 24  0 0 F               30       300
+& 
+OPERUH REST   50151  L     (RestRHQ151)
+OPERUH ELEM   50151 124  LAJES        H  6   1.0
+OPERUH LIM    50151 24  0 0 F              5.5          
+& 
+OPERUH REST   50152  L     (RestRHQ152)
+OPERUH ELEM   50152 124  LAJES        H  6   1.0
+OPERUH LIM    50152 24  0 0 F              5.5        20
+& 
+OPERUH REST   50154  L     (RestRHQ154)
+OPERUH ELEM   50154 124  LAJES        H  5   1.0
+OPERUH LIM    50154 24  0 0 F              5.5      20.0
+& 
+OPERUH REST   50157  L     (RestRHQ157)
+OPERUH ELEM   50157 125  STA CECILIA  H  5   1.0
+OPERUH LIM    50157 24  0 0 F              0.0       0.0
+& 
+OPERUH REST   50159  L     (RestRHQ159)
+OPERUH ELEM   50159 133  P. PASSOS    H  6   1.0
+OPERUH LIM    50159 24  0 0 F              120       120
+& 
+OPERUH REST   50161  L     (RestRHQ161)
+OPERUH ELEM   50161 180  TOCOS        H  5   1.0
+OPERUH LIM    50161 24  0 0 F                0        25
+& 
+OPERUH REST   50162  L     (RestRHQ162)
+OPERUH ELEM   50162 180  TOCOS        H  6   1.0
+OPERUH LIM    50162 24  0 0 F                0          
+& 
+OPERUH REST   50163  L     (RestRHQ163)
+OPERUH ELEM   50163 181  SANTANA      H  5   1.0
+OPERUH LIM    50163 24  0 0 F              0.0       0.0
+& 
+OPERUH REST   50164  L     (RestRHQ164)
+OPERUH ELEM   50164 182  VIGARIO      H  5   1.0
+OPERUH LIM    50164 24  0 0 F              0.0       196
+& 
+OPERUH REST   50165  L     (RestRHQ165)
+OPERUH ELEM   50165 182  VIGARIO      H  5   1.0
+OPERUH LIM    50165 24  0 0 F              0.0        34
+& 
+OPERUH REST   50166  L     (RestRHQ166)
+OPERUH ELEM   50166 183  FONTES A     H  6   1.0
+OPERUH LIM    50166 24  0 0 F              5.5          
+& 
+OPERUH REST   50168  L     (RestRHQ168)
+OPERUH ELEM   50168  32  CACH.DOURADA H  6   1.0
+OPERUH LIM    50168 24  0 0 F               20          
+& 
+OPERUH REST   50171  L     (RestRHQ171)
+OPERUH ELEM   50171 144  MASCARENHAS  H  6   1.0
+OPERUH LIM    50171 24  0 0 F              210          
+& 
+OPERUH REST   50174  L     (RestRHQ174)
+OPERUH ELEM   50174 107  EDGARD SOUZA H  5   1.0
+OPERUH LIM    50174 24  0 0 F              0.0         0
+& 
+OPERUH REST   50175  L     (RestRHQ175)
+OPERUH ELEM   50175 108  TRAICAO      H  5   1.0
+OPERUH LIM    50175 24  0 0 F                0         0
+& 
+OPERUH REST   50176  L     (RestRHQ176)
+OPERUH ELEM   50176 109  PEDREIRA     H  5   1.0
+OPERUH LIM    50176 24  0 0 F                0         0
+& 
+OPERUH REST   50177  L     (RestRHQ177)
+OPERUH ELEM   50177   3  Traicao      E  8   1.0
+OPERUH LIM    50177 24  0 0 F                0         0
+& 
+OPERUH REST   50178  L     (RestRHQ178)
+OPERUH ELEM   50178 118  BILLINGS     H  5   1.0
+OPERUH LIM    50178 24  0 0 F                6         6
+& 
+OPERUH REST   50179  L     (RestRHQ179)
+OPERUH ELEM   50179 109  PEDREIRA     H  6   1.0
+OPERUH LIM    50179 24  0 0 F                0         0
+& 
+OPERUH REST   50180  L     (RestRHQ180)
+OPERUH ELEM   50180 119  HENRY BORDEN H  6   1.0
+OPERUH LIM    50180 24  0 0 F                6          
+& 
+OPERUH REST   50181  L     (RestRHQ181)
+OPERUH ELEM   50181 118  BILLINGS     H  6   1.0
+OPERUH LIM    50181 24  0 0 F                0         0
+& 
+OPERUH REST   50182  L     (RestRHQ182)
+OPERUH ELEM   50182  73  JORDAO       H  6   1.0
+OPERUH LIM    50182 24  0 0 F               10          
+& 
+OPERUH REST   50183  L     (RestRHQ183)
+OPERUH ELEM   50183  57  MAUA         H  6   1.0
+OPERUH LIM    50183 24  0 0 F             78.8      4500
+& 
+OPERUH REST   50185  L     (RestRHQ185)
+OPERUH ELEM   50185  82  SALTO CAXIAS H  6   1.0
+OPERUH LIM    50185 24  0 0 F              200     30000
+& 
+OPERUH REST   50187  L     (RestRHQ187)
+OPERUH ELEM   50187 115  G.P. SOUZA   H  6   1.0
+OPERUH LIM    50187 24  0 0 F                0       140
+& 
+OPERUH REST   50188  L     (RestRHQ188)
+OPERUH ELEM   50188  77  SLT.SANTIAGO H  6   1.0
+OPERUH LIM    50188 24  0 0 F                0     19000
+& 
+OPERUH REST   50190  L     (RestRHQ190)
+OPERUH ELEM   50190  78  SALTO OSORIO H  6   1.0
+OPERUH LIM    50190 24  0 0 F              200          
+& 
+OPERUH REST   50191  L     (RestRHQ191)
+OPERUH ELEM   50191  91  MACHADINHO   H  6   1.0
+OPERUH LIM    50191 24  0 0 F              120          
+& 
+OPERUH REST   50196  L     (RestRHQ196)
+OPERUH ELEM   50196  91  MACHADINHO   H  6   1.0
+OPERUH LIM    50196 24  0 0 F              260          
+& 
+OPERUH REST   50197  L     (RestRHQ197)
+OPERUH ELEM   50197 253  SAO SALVADOR H  6   1.0
+OPERUH LIM    50197 24  0 0 F               90          
+& 
+OPERUH REST   50198  L     (RestRHQ198)
+OPERUH ELEM   50198  92  ITA          H  6   1.0
+OPERUH LIM    50198 24  0 0 F              200          
+& 
+OPERUH REST   50199  L     (RestRHQ199)
+OPERUH ELEM   50199  92  ITA          H  6   1.0
+OPERUH LIM    50199 24  0 0 F              150          
+& 
+OPERUH REST   50200  L     (RestRHQ200)
+OPERUH ELEM   50200 252  CANA BRAVA   H  6   1.0
+OPERUH LIM    50200 24  0 0 F               90          
+& 
+OPERUH REST   50202  L     (RestRHQ202)
+OPERUH ELEM   50202 267  ESTREITO TOC H  6   1.0
+OPERUH LIM    50202 24  0 0 F              744          
+& 
+OPERUH REST   50203  L     (RestRHQ203)
+OPERUH ELEM   50203 110  ERNESTINA    H  6   1.0
+OPERUH LIM    50203 24  0 0 F                0       750
+& 
+OPERUH REST   50205  L     (RestRHQ205)
+OPERUH ELEM   50205 112  JACUI        H  6   1.0
+OPERUH LIM    50205 24  0 0 F                0      2400
+& 
+OPERUH REST   50207  L     (RestRHQ207)
+OPERUH ELEM   50207 114  D. FRANCISCA H  6   1.0
+OPERUH LIM    50207 24  0 0 F             14.8          
+& Adequado ao PDP 
+OPERUH REST   50213  L     (RestRHQ213)
+OPERUH ELEM   50213 169  SOBRADINHO   H  6   1.0
+OPERUH LIM    50213 24  0 0 F              600       620
+& Adequado ao PDP 
+OPERUH REST   50216  L     (RestRHQ216)
+OPERUH ELEM   50216 178  XINGO        H  6   1.0
+OPERUH LIM    50216 24  0 0 F              600       600
+& 
+OPERUH REST   50218  L     (RestRHQ218)
+OPERUH ELEM   50218 190  B. ESPERANCA H  6   1.0
+OPERUH LIM    50218 24  0 0 F              240      1600
+& 
+OPERUH REST   50219  L     (RestRHQ219)
+OPERUH ELEM   50219 189  P. CAVALO    H  6   1.0
+OPERUH LIM    50219 24  0 0 F               10      1500
+& 
+OPERUH REST   50220  L     (RestRHQ220)
+OPERUH ELEM   50220 189  P. CAVALO    H  6   1.0
+OPERUH LIM    50220 24  0 0 F                3      1500
+& 
+OPERUH REST   50222  L     (RestRHQ222)
+OPERUH ELEM   50222 275  TUCURUI      H  6   1.0
+OPERUH LIM    50222 24  0 0 F             2000     54000
+& 
+OPERUH REST   50224  L     (RestRHQ224)
+OPERUH ELEM   50224  89  GARIBALDI    H  6   1.0
+OPERUH LIM    50224 24  0 0 F               94          
+& 
+OPERUH REST   50226  L     (RestRHQ226)
+OPERUH ELEM   50226 135  P. ESTRELA   H  6   1.0
+OPERUH LIM    50226 24  0 0 F               10      2000
+& 
+OPERUH REST   50229  L     (RestRHQ229)
+OPERUH ELEM   50229 154  ITAPEBI      H  6   1.0
+OPERUH LIM    50229 24  0 0 F               38          
+& 
+OPERUH REST   50230  L     (RestRHQ230)
+OPERUH ELEM   50230  95  QUEBRA QUEIX H  6   1.0
+OPERUH LIM    50230 24  0 0 F              0.5          
+& 
+OPERUH REST   50231  L     (RestRHQ231)
+OPERUH ELEM   50231 261  LAJEADO      H  6   1.0
+OPERUH LIM    50231 24  0 0 F              255          
+& 
+OPERUH REST   50236  L     (RestRHQ236)
+OPERUH ELEM   50236 196  GUAPORE      H  6   1.0
+OPERUH LIM    50236 24  0 0 F                3          
+& 
+OPERUH REST   50243  L     (RestRHQ243)
+OPERUH ELEM   50243  28  CAPIM BRANC2 H  6   1.0
+OPERUH LIM    50243 24  0 0 F               72          
+& 
+OPERUH REST   50244  L     (RestRHQ244)
+OPERUH ELEM   50244 276  RONDON II    H  6   1.0
+OPERUH LIM    50244 24  0 0 F              8.5          
+& 
+OPERUH REST   50248  L     (RestRHQ248)
+OPERUH ELEM   50248 251  SERRA MESA   H  6   1.0
+OPERUH LIM    50248 24  0 0 F              340       340
+& 
+OPERUH REST   50252  L     (RestRHQ252)
+OPERUH ELEM   50252 314  PIMENTAL     H  5   1.0
+OPERUH LIM    50252 24  0 0 F              300     13900
+& 
+OPERUH REST   50254  L     (RestRHQ254)
+OPERUH ELEM   50254 314  PIMENTAL     H  6   1.0
+OPERUH LIM    50254 24  0 0 F           2000.0          
+& 
+&
+OPERUH REST   90000  L
+OPERUH ELEM   90000  37  BARRA BONITA H  7   1.0
+OPERUH LIM    90000 28  0 0 28  7 0                     70
+&
+OPERUH REST   90001  L
+OPERUH ELEM   90001  37  BARRA BONITA H  7   1.0
+OPERUH LIM    90001 28  7 0  1  0 0                    105
+&
+OPERUH REST   90002  L
+OPERUH ELEM   90002  63        ROSANA H  7   1.0
+OPERUH LIM    90002 28  0 0 30  7 0                    266
+&
+OPERUH REST   90003  L
+OPERUH ELEM   90003  63        ROSANA H  7   1.0
+OPERUH LIM    90003 30  7 0 30 18 0                    282
+&
+OPERUH REST   90004  L
+OPERUH ELEM   90004  45         JUPIA H  7   1.0
+OPERUH LIM    90004 28  0 0 30  7 0                   1107
+&
+OPERUH REST   90005  L
+OPERUH ELEM   90005  45         JUPIA H  7   1.0
+OPERUH LIM    90005 30  7 0 30 18 0                   1082
+&
+OPERUH REST   90006  L
+OPERUH ELEM   90006  45         JUPIA H  7   1.0
+OPERUH LIM    90006 30 18 0  1  0 0                   1107
+&
+OPERUH REST   90007  L
+OPERUH ELEM   90007  44  I. SOLT. EQV H  7   1.0
+OPERUH LIM    90007 28  0 0  F                        4082
+&
+OPERUH REST   90008  L
+OPERUH ELEM   90008  31     ITUMBIARA H  7   1.0
+OPERUH LIM    90008 28  0 0 30  0 0                   1702
+&
+OPERUH REST   90009  L
+OPERUH ELEM   90009  31     ITUMBIARA H  7   1.0
+OPERUH LIM    90009 30  0 0 30  7 0                   2028
+&
+OPERUH REST   90010  L
+OPERUH ELEM   90010 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90010 28  0 0 28  7 0                   2932
+&
+OPERUH REST   90011  L
+OPERUH ELEM   90011 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90011 28  7 0 28  9 0                   3072
+&
+OPERUH REST   90012  L
+OPERUH ELEM   90012 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90012 28  9 0 28  9 0                   3002
+&
+OPERUH REST   90013  L
+OPERUH ELEM   90013 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90013 28  9 0 28 17 0                   2862
+&
+OPERUH REST   90014  L
+OPERUH ELEM   90014 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90014 28 17 0 29  0 0                   3072
+&
+OPERUH REST   90015  L
+OPERUH ELEM   90015 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90015 29  0 0 29  0 0                   2932
+&
+OPERUH REST   90016  L
+OPERUH ELEM   90016 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90016 29  0 0 29  7 0                   2942
+&
+OPERUH REST   90017  L
+OPERUH ELEM   90017 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90017 29  7 0 29 18 0                   2970
+&
+OPERUH REST   90018  L
+OPERUH ELEM   90018 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90018 29 18 0 29 19 0                   3072
+&
+OPERUH REST   90019  L
+OPERUH ELEM   90019 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90019 29 19 0 30  0 0                   3058
+&
+OPERUH REST   90020  L
+OPERUH ELEM   90020 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90020 30  0 0 30  7 0                   2939
+&
+OPERUH REST   90021  L
+OPERUH ELEM   90021 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90021 30  7 0 30 18 0                   2970
+&
+OPERUH REST   90022  L
+OPERUH ELEM   90022 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90022 30 18 0 30 19 0                   3072
+&
+OPERUH REST   90023  L
+OPERUH ELEM   90023 287   STO ANTONIO H  7   1.0
+OPERUH LIM    90023 30 19 0  1  0 0                   3058
+&
+OPERUH REST   90024  L
+OPERUH ELEM   90024 130   ILHA POMBOS H  7   1.0
+OPERUH LIM    90024 28  0 0  F                         135
+&
+OPERUH REST   90025  L
+OPERUH ELEM   90025 119  HENRY BORDEN H  7   1.0
+OPERUH LIM    90025 30  0 0 30  7 0                    854
+&
+OPERUH REST   90026  L
+OPERUH ELEM   90026  66        ITAIPU H  7   1.0
+OPERUH LIM    90026 28  0 0  F                       13300
+&
+OPERUH REST   90027  L
+OPERUH ELEM   90027  78  SALTO OSORIO H  7   1.0
+OPERUH LIM    90027 28  0 0  F                         903
+&
+OPERUH REST   90028  L
+OPERUH ELEM   90028  93   PASSO FUNDO H  7   1.0
+OPERUH LIM    90028 28  0 0  F                         113
+&
+OPERUH REST   90029  L
+OPERUH ELEM   90029 252    CANA BRAVA H  7   1.0
+OPERUH LIM    90029 28  0 0  F                         300
+&
+OPERUH REST   90030  L
+OPERUH ELEM   90030 103   FOZ CHAPECO H  7   1.0
+OPERUH LIM    90030 28  0 0  F                         641
+&
+OPERUH REST   90031  L
+OPERUH ELEM   90031 126        PICADA H  7   1.0
+OPERUH LIM    90031 28  7 0 28 17 0                     25
+&
+OPERUH REST   90032  L
+OPERUH ELEM   90032 126        PICADA H  7   1.0
+OPERUH LIM    90032 28 17 0 29  7 0                     50
+&
+OPERUH REST   90033  L
+OPERUH ELEM   90033 126        PICADA H  7   1.0
+OPERUH LIM    90033 29  7 0 29 18 0                     28
+&
+OPERUH REST   90034  L
+OPERUH ELEM   90034 126        PICADA H  7   1.0
+OPERUH LIM    90034 29 18 0 30  7 0                     50
+&
+OPERUH REST   90035  L
+OPERUH ELEM   90035 126        PICADA H  7   1.0
+OPERUH LIM    90035 30  7 0 30 18 0                     28
+&
+OPERUH REST   90036  L
+OPERUH ELEM   90036 196       GUAPORE H  7   1.0
+OPERUH LIM    90036 29  7 0 29 18 0                    105
+&
+OPERUH REST   90037  L
+OPERUH ELEM   90037 229   TELES PIRES H  7   1.0
+OPERUH LIM    90037 28  0 0 29  7 0                   1092
+&
+OPERUH REST   90038  L
+OPERUH ELEM   90038 229   TELES PIRES H  7   1.0
+OPERUH LIM    90038 29  7 0 29 18 0                    943
+&
+OPERUH REST   90039  L
+OPERUH ELEM   90039 229   TELES PIRES H  7   1.0
+OPERUH LIM    90039 29 18 0 30  7 0                   1092
+&
+OPERUH REST   90040  L
+OPERUH ELEM   90040 229   TELES PIRES H  7   1.0
+OPERUH LIM    90040 30  7 0 30 18 0                   1109
+&
+OPERUH REST   90041  L
+OPERUH ELEM   90041 229   TELES PIRES H  7   1.0
+OPERUH LIM    90041 30 18 0  1  0 0                   1456
+&
+OPERUH REST   90042  L
+OPERUH ELEM   90042 288    BELO MONTE H  7   1.0
+OPERUH LIM    90042 30  0 0 30  7 0                   2925
+&
+&USADO
